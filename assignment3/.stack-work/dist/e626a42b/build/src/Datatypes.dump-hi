@@ -1,0 +1,55 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-13 09:19:47.3165016 UTC
+
+interface assignment3-0.1.0.0-9i4uiBo51Te8KoS5E69sq9:Datatypes 8063
+  interface hash: 531042a848914c58c428b27ff860159a
+  ABI hash: ae5e1cd016827baf00925a721d775f6d
+  export-list hash: 0320e74f3c115621a393e1e085a3f0ba
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 79e7e8219d5f881ceb808120776b4b23
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Prelude b1ccc486556b171042710ef6f2d1a539
+34dd6f225d2f3f55d6f2b35749b3bcde
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Datatypes.$trModule3
+                   Datatypes.$trModule1) -}
+06aa4977aca62e6cc2ac322359c30ccd
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Datatypes.$trModule2) -}
+ef1f02a73f152125a605d2cb9f1a3188
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Datatypes"#) -}
+42cd695ac77eaf1294eb9022b1e23b8d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Datatypes.$trModule4) -}
+8b3361d4d5721d83461be717cf694381
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("assignment3-0.1.0.0-9i4uiBo51Te8KoS5E69sq9"#) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

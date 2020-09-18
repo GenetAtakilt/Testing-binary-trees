@@ -1,0 +1,2975 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-13 20:18:56.7780791 UTC
+
+interface assignment3-0.1.0.0-1DFvuy72ZJrE0fXsM2rMND:Megap 8063
+  interface hash: 600381c38eb707fdc9c22a909ae66a62
+  ABI hash: 80fc9ca557567543f31c51cce1e341b5
+  export-list hash: 6346362dd86d672ec9b5e070c548aed1
+  orphan hash: c6dd7a99c9a91146fe975e2fd96e2181
+  flag hash: eec76558d727d1a2452939d6925bae36
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Megap.fromBlock
+  Megap.fromBlock'
+  Megap.fromCtrl
+  Megap.fromInstrs
+  Megap.fromSimple
+  Megap.int
+  Megap.main
+  Megap.parseBlock
+  Megap.parseCtrl
+  Megap.parseInstrs
+  Megap.parseSimple
+  Megap.sym
+  Megap.ws
+  Megap.Block{Megap.Blo}
+  Megap.Ctrl{Megap.Halt Megap.IfZero Megap.Loop Megap.Ret}
+  Megap.Instrs{Megap.C Megap.I}
+  Megap.Parser
+  Megap.Simple{Megap.Add Megap.Dup Megap.Mul Megap.Neg Megap.Over Megap.Pop Megap.Push Megap.Swap}
+module dependencies: Stack
+package dependencies: array-0.5.3.0 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 case-insensitive-1.2.0.11 containers-0.6.0.1
+                      deepseq-1.4.4.0 ghc-prim-0.5.3 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.2.2 megaparsec-7.0.4 mtl-2.2.2
+                      parser-combinators-1.0.1 primitive-0.6.4.0 scientific-0.3.6.2
+                      text-1.2.3.1 transformers-0.5.5.0
+orphans: transformers-0.5.5.0:Control.Monad.Trans.Error
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         megaparsec-7.0.4:Text.Megaparsec.Error
+                         megaparsec-7.0.4:Text.Megaparsec.Pos
+                         megaparsec-7.0.4:Text.Megaparsec.State
+                         megaparsec-7.0.4:Text.Megaparsec.Stream
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array text-1.2.3.1:Data.Text
+                         text-1.2.3.1:Data.Text.Lazy
+import  -/  Stack b61b9f0167f3bba163628c1e247f65ea
+  exports: 198761b55219a6243e6db6bd432e71a3
+  Add b5dadd6348e40cb954a5719b6251de0a
+  Dup a6f72e33ccaea53a0f81f25a82e3f9f6
+  Halt 2434c2f9d97ee2edd3af3af2101f3de2
+  IfZero 3155ab1f7c7479767316f130e8d66ce4
+  Instructions b7cb616944190638962a309122b2b45f
+  Loop 9d534916f9302935b6698b50b1fbe97e
+  Mul 31d09b507e5d930b8a38ce4ab9edc984
+  Neg 77ee4e4d69ff039289b2fd8c78289a67
+  Over 9695bec4961b6f032bed1746742b17be
+  Pop 0c6016d1b6113bfe666afb67a6359763
+  Push c1fd51714d291339a702b771b2b7d980
+  Swap a38edad13a9efaf6847dfa25a2e2c413
+  run 03d58f0d86c0df4e20e35fc2fd854ada
+import  -/  base-4.12.0.0:Data.Either b81d41b5f4255f0a7c195f59e02f5b66
+import  -/  base-4.12.0.0:Data.Functor d76c001d92d0a1adf6f6220faa8ca3e5
+import  -/  base-4.12.0.0:Data.Void 8275bdb9ce14f1255dfe4ed62fee1492
+import  -/  base-4.12.0.0:GHC.Base b0f6eed6c4b57b0a2f7c7570f245848b
+import  -/  base-4.12.0.0:GHC.IO 67e0586157fa443bcff8cea88c8e7aa2
+import  -/  base-4.12.0.0:GHC.Show 5c4c5ac15ef4d7749e0e6f06242c812a
+import  -/  base-4.12.0.0:Prelude b1ccc486556b171042710ef6f2d1a539
+import  -/  base-4.12.0.0:System.IO c4f9b4edbf0d6a7a9a49fe16b71318d4
+import  -/  ghc-prim-0.5.3:GHC.Classes 555218a5f891dab16ebc6e6e04763e77
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  megaparsec-7.0.4:Text.Megaparsec 7df8dafd569bbec3b9e4461882f5d1f8
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Char cf99495c2b9d970340d924c58fdc23b5
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Char.Lexer 7491e70f16b8f2481f147918ded7fb2b
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Error ae4537c895f9e85ef8486eb6ee5eacb2
+import  -/  megaparsec-7.0.4:Text.Megaparsec.Lexer 83dbd661cbe9657eaf7f67f0d3a31c0d
+e688b3b22975d3ca58273cf81c016331
+  $fShowBlock :: GHC.Show.Show Megap.Block
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Megap.Block
+                  Megap.$fShowBlock_$cshowsPrec1
+                  Megap.$fShowBlock_$cshow
+                  Megap.$fShowBlock_$cshowList -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowBlock1 :: Megap.Block -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U(1*U)>,
+     Unfolding: (\ (w :: Megap.Block) ->
+                 case w of ww { Megap.Blo ww1 -> Megap.$w$cshowsPrec 0# ww1 }) -}
+480e4818f136fac7fbc9450f78e6c131
+  $fShowBlock2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowBlock3) -}
+f143dc098df584e7133b0fa8d5ccbbd3
+  $fShowBlock3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Blo "#) -}
+a0d0884d098e649635509b3ecf05596a
+  $fShowBlock4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowBlock_$cshow :: Megap.Block -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Megap.Block) ->
+                 case x of wild { Megap.Blo b1 ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Megap.$fShowBlock2)
+                   (Megap.$fShowBlock_$cshowsPrec
+                      Megap.$fShowBlock4
+                      b1
+                      (GHC.Types.[] @ GHC.Types.Char)) }) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowBlock_$cshowList :: [Megap.Block] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Megap.Block]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Megap.Block Megap.$fShowBlock1 ls s) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowBlock_$cshowsPrec ::
+    GHC.Types.Int -> Megap.Instrs -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Megap.Instrs) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Megap.$w$cshowsPrec1 ww1 w1 }) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowBlock_$cshowsPrec1 ::
+    GHC.Types.Int -> Megap.Block -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Megap.Block) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Megap.Blo ww3 ->
+                 Megap.$w$cshowsPrec ww1 ww3 } }) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowCtrl :: GHC.Show.Show Megap.Ctrl
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Megap.Ctrl
+                  Megap.$fShowCtrl_$cshowsPrec
+                  Megap.$fShowCtrl_$cshow
+                  Megap.$fShowCtrl_$cshowList -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowCtrl1 :: Megap.Ctrl -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (Megap.$fShowCtrl_$cshowsPrec Megap.$fShowCtrl2) -}
+2a21963e2c871d860511a052de576939
+  $fShowCtrl10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Loop "#) -}
+1a4306deb37595a2cc6fc6e9bbf1e87d
+  $fShowCtrl11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("IfZero "#) -}
+1cd92a17baaed89d3cac91272c9ff402
+  $fShowCtrl12 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.$fShow(,)2
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e3792e6526a63b0b5b941e3ae294fd55
+  $fShowCtrl2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+b216ff9063dddb017937e5fb42346115
+  $fShowCtrl3 :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++ @ GHC.Types.Char Megap.$fShowCtrl4) -}
+1908f81484e765bf37951546b356bc41
+  $fShowCtrl4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowCtrl5) -}
+4ab4420a1e8b9d32d1dc85af9eae6988
+  $fShowCtrl5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Ret"#) -}
+dfcd5a661b7c91d70b02a5321624c06d
+  $fShowCtrl6 :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++ @ GHC.Types.Char Megap.$fShowCtrl7) -}
+6abaee6707a24d3c7955f0e5f4021934
+  $fShowCtrl7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowCtrl8) -}
+0b03087c56e44c247647778696e32d84
+  $fShowCtrl8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Halt"#) -}
+8af9f51318fa3ce2bc7709531af16c6b
+  $fShowCtrl9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowCtrl10) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowCtrl_$cshow :: Megap.Ctrl -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Megap.Ctrl) ->
+                 case x of wild {
+                   Megap.IfZero b1 b2
+                   -> GHC.CString.unpackAppendCString#
+                        Megap.$fShowCtrl11
+                        (case b1 of wild1 { Megap.Blo b4 ->
+                         GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.$fShow(,)4
+                           (GHC.Base.++
+                              @ GHC.Types.Char
+                              Megap.$fShowBlock2
+                              (Megap.$w$cshowsPrec1
+                                 11#
+                                 b4
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.$fShow(,)2
+                                    (GHC.Types.:
+                                       @ GHC.Types.Char
+                                       GHC.Show.showSpace1
+                                       (case b2 of wild2 { Megap.Blo b5 ->
+                                        GHC.Types.:
+                                          @ GHC.Types.Char
+                                          GHC.Show.$fShow(,)4
+                                          (GHC.Base.++
+                                             @ GHC.Types.Char
+                                             Megap.$fShowBlock2
+                                             (Megap.$w$cshowsPrec1
+                                                11#
+                                                b5
+                                                Megap.$fShowCtrl12)) }))))) })
+                   Megap.Loop b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Megap.$fShowCtrl9
+                        (case b1 of wild1 { Megap.Blo b2 ->
+                         GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.$fShow(,)4
+                           (GHC.Base.++
+                              @ GHC.Types.Char
+                              Megap.$fShowBlock2
+                              (Megap.$w$cshowsPrec1 11# b2 Megap.$fShowCtrl12)) })
+                   Megap.Halt -> Megap.$fShowCtrl7
+                   Megap.Ret -> Megap.$fShowCtrl4 }) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowCtrl_$cshowList :: [Megap.Ctrl] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Megap.Ctrl]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Megap.Ctrl Megap.$fShowCtrl1 ls s) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowCtrl_$cshowsPrec ::
+    GHC.Types.Int -> Megap.Ctrl -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U>,
+     Unfolding: (\ (a :: GHC.Types.Int) (ds :: Megap.Ctrl) ->
+                 case ds of wild {
+                   Megap.IfZero b1 b2
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      let {
+                        f2 :: GHC.Base.String -> GHC.Base.String
+                        = case b1 of ww { Megap.Blo ww1 -> Megap.$w$cshowsPrec 11# ww1 }
+                      } in
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = case b2 of ww { Megap.Blo ww1 -> Megap.$w$cshowsPrec 11# ww1 }
+                      } in
+                      case GHC.Prim.>=# x 11# of lwild {
+                        DEFAULT
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.CString.unpackAppendCString#
+                             Megap.$fShowCtrl11
+                             (f2 (GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 (g x1)))
+                        1#
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                Megap.$fShowCtrl11
+                                (f2
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.showSpace1
+                                      (g (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShow(,)2
+                                            x1))))) } }
+                   Megap.Loop b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = case b1 of ww { Megap.Blo ww1 -> Megap.$w$cshowsPrec 11# ww1 }
+                      } in
+                      case GHC.Prim.>=# x 11# of lwild {
+                        DEFAULT
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char Megap.$fShowCtrl9 (g x1)
+                        1#
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Megap.$fShowCtrl9
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x1))) } }
+                   Megap.Halt -> Megap.$fShowCtrl6
+                   Megap.Ret -> Megap.$fShowCtrl3 }) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowInstrs :: GHC.Show.Show Megap.Instrs
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Megap.Instrs
+                  Megap.$fShowBlock_$cshowsPrec
+                  Megap.$fShowInstrs_$cshow
+                  Megap.$fShowInstrs_$cshowList -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowInstrs1 :: Megap.Instrs -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (w :: Megap.Instrs) -> Megap.$w$cshowsPrec1 0# w) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowInstrs_$cshow :: Megap.Instrs -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Megap.Instrs) ->
+                 Megap.$fShowBlock_$cshowsPrec
+                   Megap.$fShowCtrl2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e688b3b22975d3ca58273cf81c016331
+  $fShowInstrs_$cshowList :: [Megap.Instrs] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Megap.Instrs]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Megap.Instrs Megap.$fShowInstrs1 ls s) -}
+c640be9800249eac232b8543e97163ee
+  $fShowSimple :: GHC.Show.Show Megap.Simple
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Megap.Simple
+                  Megap.$fShowSimple_$cshowsPrec
+                  Megap.$fShowSimple_$cshow
+                  Megap.$fShowSimple_$cshowList -}
+c640be9800249eac232b8543e97163ee
+  $fShowSimple1 :: Megap.Simple -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Megap.$fShowSimple_$cshowsPrec Megap.$fShowCtrl2) -}
+4f38279f2986c5f48893efd54eeaa3a4
+  $fShowSimple10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowSimple11) -}
+2c9d779bff6cc52e1a86ad307d432f88
+  $fShowSimple11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Dup"#) -}
+d6af008e0ab0375da0834a8ae16c33d0
+  $fShowSimple12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowSimple13) -}
+e722d074753e9695e1c5e86481b7025c
+  $fShowSimple13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Mul"#) -}
+16848bcdf1cd5ef00b6114b4b9e8539e
+  $fShowSimple14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowSimple15) -}
+085f1904da6366da4b636afb7b251add
+  $fShowSimple15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Add"#) -}
+30bdc2b7ccf3f725d4ded88992c54939
+  $fShowSimple16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Push "#) -}
+14127e4196b433c4fb2b5ef5efed0bc8
+  $fShowSimple2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowSimple3) -}
+a07084e0fb1e90304c303dd4f28ed85d
+  $fShowSimple3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Over"#) -}
+82c341da7470b53d2366d8af751785ca
+  $fShowSimple4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowSimple5) -}
+b3c812a47c20328a1f2f40f37850ba5b
+  $fShowSimple5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Pop"#) -}
+31617d346899404588441d3779d57a89
+  $fShowSimple6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowSimple7) -}
+bffaa06f71b4609838652c646fe45008
+  $fShowSimple7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Neg"#) -}
+ef0fa0a225510506134603af7ba5d1e6
+  $fShowSimple8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$fShowSimple9) -}
+373e2d8f5b8e596b17aeb25124813f77
+  $fShowSimple9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Swap"#) -}
+c640be9800249eac232b8543e97163ee
+  $fShowSimple_$cshow :: Megap.Simple -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Megap.Simple) ->
+                 case x of wild {
+                   Megap.Push b1
+                   -> GHC.CString.unpackAppendCString#
+                        Megap.$fShowSimple16
+                        (case b1 of ww2 { GHC.Types.I# ww3 ->
+                         case GHC.Show.$wshowSignedInt
+                                11#
+                                ww3
+                                (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                         GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                   Megap.Add -> Megap.$fShowSimple14
+                   Megap.Mul -> Megap.$fShowSimple12
+                   Megap.Dup -> Megap.$fShowSimple10
+                   Megap.Swap -> Megap.$fShowSimple8
+                   Megap.Neg -> Megap.$fShowSimple6
+                   Megap.Pop -> Megap.$fShowSimple4
+                   Megap.Over -> Megap.$fShowSimple2 }) -}
+c640be9800249eac232b8543e97163ee
+  $fShowSimple_$cshowList :: [Megap.Simple] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Megap.Simple]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Megap.Simple Megap.$fShowSimple1 ls s) -}
+c640be9800249eac232b8543e97163ee
+  $fShowSimple_$cshowsPrec ::
+    GHC.Types.Int -> Megap.Simple -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
+     Unfolding: (\ (a :: GHC.Types.Int)
+                   (ds :: Megap.Simple)
+                   (eta18 :: GHC.Base.String) ->
+                 case ds of wild {
+                   Megap.Push b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      case GHC.Prim.>=# x 11# of lwild {
+                        DEFAULT
+                        -> GHC.CString.unpackAppendCString#
+                             Megap.$fShowSimple16
+                             (case b1 of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Show.$wshowSignedInt
+                                     11#
+                                     ww3
+                                     eta18 of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                        1#
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                Megap.$fShowSimple16
+                                (case b1 of ww2 { GHC.Types.I# ww3 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        11#
+                                        ww3
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.$fShow(,)2
+                                           eta18) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) } }
+                   Megap.Add
+                   -> GHC.Base.++ @ GHC.Types.Char Megap.$fShowSimple14 eta18
+                   Megap.Mul
+                   -> GHC.Base.++ @ GHC.Types.Char Megap.$fShowSimple12 eta18
+                   Megap.Dup
+                   -> GHC.Base.++ @ GHC.Types.Char Megap.$fShowSimple10 eta18
+                   Megap.Swap
+                   -> GHC.Base.++ @ GHC.Types.Char Megap.$fShowSimple8 eta18
+                   Megap.Neg -> GHC.Base.++ @ GHC.Types.Char Megap.$fShowSimple6 eta18
+                   Megap.Pop -> GHC.Base.++ @ GHC.Types.Char Megap.$fShowSimple4 eta18
+                   Megap.Over
+                   -> GHC.Base.++ @ GHC.Types.Char Megap.$fShowSimple2 eta18 }) -}
+24e1762e868fa4c9c7b6a89ba27f57a6
+  $s$fAlternativeParsecT_$sunion ::
+    Data.Set.Internal.Set
+      (Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+    -> Data.Set.Internal.Set
+         (Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+    -> Data.Set.Internal.Set
+         (Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
+fdf4e0ad051718f825242ebf80055bbe
+  $s$fAlternativeParsecT_$sunion1 ::
+    Data.Set.Internal.Set
+      (Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+    -> Data.Set.Internal.Set
+         (Text.Megaparsec.Error.ErrorItem
+            (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+    -> Data.Set.Internal.Set
+         (Text.Megaparsec.Error.ErrorItem
+            (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [~] -}
+da9226f4396db9e4e19e0f85609214e1
+  $s$fAlternativeParsecT_$swithHints ::
+    Text.Megaparsec.Internal.Hints
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> (Text.Megaparsec.Error.ParseError [GHC.Types.Char] e
+        -> Text.Megaparsec.State.State [GHC.Types.Char] -> m b)
+    -> Text.Megaparsec.Error.ParseError [GHC.Types.Char] e
+    -> Text.Megaparsec.State.State [GHC.Types.Char]
+    -> m b
+  {- Arity: 3, Strictness: <L,U><C(S),1*C1(U)><S,1*U>,
+     Inline: (sat-args=3),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ e
+                   @ m :: * -> *
+                   @ b
+                   (ds :: Text.Megaparsec.Internal.Hints
+                            (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   (c :: Text.Megaparsec.Error.ParseError [GHC.Types.Char] e
+                         -> Text.Megaparsec.State.State [GHC.Types.Char] -> m b)
+                   (e1 :: Text.Megaparsec.Error.ParseError [GHC.Types.Char] e) ->
+                 case e1 of wild {
+                   Text.Megaparsec.Error.TrivialError pos us ps4
+                   -> c (Text.Megaparsec.Error.TrivialError
+                           @ [GHC.Types.Char]
+                           @ e
+                           pos
+                           us
+                           (GHC.Base.foldr
+                              @ (Data.Set.Internal.Set
+                                   (Text.Megaparsec.Error.ErrorItem
+                                      (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                              @ (Data.Set.Internal.Set
+                                   (Text.Megaparsec.Error.ErrorItem
+                                      (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                                 -> Data.Set.Internal.Set
+                                      (Text.Megaparsec.Error.ErrorItem
+                                         (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                              (\ (ds1 :: Data.Set.Internal.Set
+                                           (Text.Megaparsec.Error.ErrorItem
+                                              (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                                 (ds2 :: Data.Set.Internal.Set
+                                           (Text.Megaparsec.Error.ErrorItem
+                                              (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                                         -> Data.Set.Internal.Set
+                                              (Text.Megaparsec.Error.ErrorItem
+                                                 (Text.Megaparsec.Stream.Token
+                                                    [GHC.Types.Char])))[OneShot]
+                                 (v :: Data.Set.Internal.Set
+                                         (Text.Megaparsec.Error.ErrorItem
+                                            (Text.Megaparsec.Stream.Token
+                                               [GHC.Types.Char])))[OneShot] ->
+                               case v of z { DEFAULT ->
+                               ds2 (Megap.$s$fAlternativeParsecT_$sunion1 z ds1) })
+                              (GHC.Base.id
+                                 @ (Data.Set.Internal.Set
+                                      (Text.Megaparsec.Error.ErrorItem
+                                         (Text.Megaparsec.Stream.Token [GHC.Types.Char]))))
+                              (GHC.Types.:
+                                 @ (Data.Set.Internal.Set
+                                      (Text.Megaparsec.Error.ErrorItem
+                                         (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                                 ps4
+                                 ds
+                                   `cast`
+                                 (Text.Megaparsec.Internal.N:Hints[0]
+                                      <Text.Megaparsec.Stream.Token [GHC.Types.Char]>_N))
+                              (Data.Set.Internal.Tip
+                                 @ (Text.Megaparsec.Error.ErrorItem
+                                      (Text.Megaparsec.Stream.Token [GHC.Types.Char])))))
+                   Text.Megaparsec.Error.FancyError ipv ipv1 -> c wild }) -}
+bf58049d7bf91e265369f1c8fdf93a53
+  $s$fEqErrorFancy ::
+    GHC.Classes.Eq (Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                  (Text.Megaparsec.Error.$fEqErrorFancy_$c==
+                     @ Data.Void.Void
+                     Data.Void.$fEqVoid)
+                  Megap.$s$fEqErrorFancy_$s$fEqErrorFancy_$c/= -}
+839105b729a5aff8395d9d2fb265daec
+  $s$fEqErrorFancy_$s$fEqErrorFancy_$c/= ::
+    Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                   (y :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                 case Text.Megaparsec.Error.$fEqErrorFancy_$c==
+                        @ Data.Void.Void
+                        Data.Void.$fEqVoid
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+6d91b0b50c30b9a835cd52c072f84662
+  $s$fEqErrorItem ::
+    GHC.Classes.Eq
+      (Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Text.Megaparsec.Error.ErrorItem
+                       (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                  (Text.Megaparsec.Error.$fEqErrorItem_$c==
+                     @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                     GHC.Classes.$fEqChar
+                       `cast`
+                     (GHC.Classes.Eq (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R)
+                  Megap.$s$fEqErrorItem_$s$fEqErrorItem_$c/= -}
+97cbffd26c78917b102dc1ca9055a97d
+  $s$fEqErrorItem_$s$fEqErrorItem_$c/= ::
+    Text.Megaparsec.Error.ErrorItem
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   (y :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                 case Text.Megaparsec.Error.$fEqErrorItem_$c==
+                        @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                        GHC.Classes.$fEqChar
+                          `cast`
+                        (GHC.Classes.Eq (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+5d1ff07f85183d89f5437fc4ecf380f4
+  $s$fOrdErrorFancy ::
+    GHC.Classes.Ord (Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                  Megap.$s$fEqErrorFancy
+                  (Text.Megaparsec.Error.$fOrdErrorFancy_$ccompare
+                     @ Data.Void.Void
+                     Data.Void.$fOrdVoid)
+                  (Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                     @ Data.Void.Void
+                     Data.Void.$fOrdVoid)
+                  (\ (a :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                     (b :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                   case Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                          @ Data.Void.Void
+                          Data.Void.$fOrdVoid
+                          b
+                          a of wild {
+                     GHC.Types.False -> GHC.Types.True
+                     GHC.Types.True -> GHC.Types.False })
+                  (\ (a :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                     (b :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                   Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                     @ Data.Void.Void
+                     Data.Void.$fOrdVoid
+                     b
+                     a)
+                  (\ (a :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                     (b :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                   case Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                          @ Data.Void.Void
+                          Data.Void.$fOrdVoid
+                          a
+                          b of wild {
+                     GHC.Types.False -> GHC.Types.True
+                     GHC.Types.True -> GHC.Types.False })
+                  (\ (x :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                     (y :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                   case Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                          @ Data.Void.Void
+                          Data.Void.$fOrdVoid
+                          y
+                          x of wild {
+                     GHC.Types.False -> y GHC.Types.True -> x })
+                  (\ (x :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                     (y :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                   case Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                          @ Data.Void.Void
+                          Data.Void.$fOrdVoid
+                          y
+                          x of wild {
+                     GHC.Types.False -> x GHC.Types.True -> y }) -}
+ce32647127af1b4ec0893090833ffb5d
+  $s$fOrdErrorFancy_$c<= ::
+    Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                   (b :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                 case Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                        @ Data.Void.Void
+                        Data.Void.$fOrdVoid
+                        b
+                        a of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+f1d07d23ed532c5ab3ad0efcbe2ecdf2
+  $s$fOrdErrorFancy_$c>= ::
+    Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                   (b :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                 case Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                        @ Data.Void.Void
+                        Data.Void.$fOrdVoid
+                        a
+                        b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+15c07ac8904b49427626ec2bded67ef5
+  $s$fOrdErrorFancy_$cmax ::
+    Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                   (y :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                 case Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                        @ Data.Void.Void
+                        Data.Void.$fOrdVoid
+                        y
+                        x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+791397950e1c8ae67fdd2d932236b9b0
+  $s$fOrdErrorFancy_$cmin ::
+    Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+    -> Text.Megaparsec.Error.ErrorFancy Data.Void.Void
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void)
+                   (y :: Text.Megaparsec.Error.ErrorFancy Data.Void.Void) ->
+                 case Text.Megaparsec.Error.$fOrdErrorFancy_$c<
+                        @ Data.Void.Void
+                        Data.Void.$fOrdVoid
+                        y
+                        x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+a2d4769416206ab1486aebf206e51221
+  $s$fOrdErrorItem ::
+    GHC.Classes.Ord
+      (Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Text.Megaparsec.Error.ErrorItem
+                       (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                  Megap.$s$fEqErrorItem
+                  (Text.Megaparsec.Error.$fOrdErrorItem_$ccompare
+                     @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                     GHC.Classes.$fOrdChar
+                       `cast`
+                     (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R)
+                  (Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                     @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                     GHC.Classes.$fOrdChar
+                       `cast`
+                     (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R)
+                  (\ (a :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                     (b :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                   case Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                          @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          GHC.Classes.$fOrdChar
+                            `cast`
+                          (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                          b
+                          a of wild {
+                     GHC.Types.False -> GHC.Types.True
+                     GHC.Types.True -> GHC.Types.False })
+                  (\ (a :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                     (b :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                   Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                     @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                     GHC.Classes.$fOrdChar
+                       `cast`
+                     (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                     b
+                     a)
+                  (\ (a :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                     (b :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                   case Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                          @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          GHC.Classes.$fOrdChar
+                            `cast`
+                          (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                          a
+                          b of wild {
+                     GHC.Types.False -> GHC.Types.True
+                     GHC.Types.True -> GHC.Types.False })
+                  (\ (x :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                     (y :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                   case Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                          @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          GHC.Classes.$fOrdChar
+                            `cast`
+                          (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                          y
+                          x of wild {
+                     GHC.Types.False -> y GHC.Types.True -> x })
+                  (\ (x :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                     (y :: Text.Megaparsec.Error.ErrorItem
+                             (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                   case Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                          @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          GHC.Classes.$fOrdChar
+                            `cast`
+                          (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                          y
+                          x of wild {
+                     GHC.Types.False -> x GHC.Types.True -> y }) -}
+ef21c7af0fde64fe1426178e03e47a37
+  $s$fOrdErrorItem_$c<= ::
+    Text.Megaparsec.Error.ErrorItem
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   (b :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                 case Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                        @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                        GHC.Classes.$fOrdChar
+                          `cast`
+                        (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                        b
+                        a of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+695264418ba198ea5c1377771635a1d4
+  $s$fOrdErrorItem_$c>= ::
+    Text.Megaparsec.Error.ErrorItem
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   (b :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                 case Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                        @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                        GHC.Classes.$fOrdChar
+                          `cast`
+                        (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                        a
+                        b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+a7875617c94d2ea11b8a5cb31eee888f
+  $s$fOrdErrorItem_$cmax ::
+    Text.Megaparsec.Error.ErrorItem
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   (y :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                 case Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                        @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                        GHC.Classes.$fOrdChar
+                          `cast`
+                        (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                        y
+                        x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+9d3126b32a7b4fc73cfb0e1f96aa8e77
+  $s$fOrdErrorItem_$cmin ::
+    Text.Megaparsec.Error.ErrorItem
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+    -> Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   (y :: Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])) ->
+                 case Text.Megaparsec.Error.$fOrdErrorItem_$c<
+                        @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                        GHC.Classes.$fOrdChar
+                          `cast`
+                        (GHC.Classes.Ord (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))_R
+                        y
+                        x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+ff5b56664c1b48f2d78f735141668395
+  $sdecimal1 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (GHC.Types.Int
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> (GHC.Types.Int
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S(SSL),1*U(U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(C1(U))>,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   (w :: Text.Megaparsec.State.State [GHC.Types.Char])
+                   (w1 :: GHC.Types.Int
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Megaparsec.Error.ParseError
+                            [GHC.Types.Char] Data.Void.Void
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: GHC.Types.Int
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Megaparsec.Error.ParseError
+                            [GHC.Types.Char] Data.Void.Void
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Data.Functor.Identity.Identity b) ->
+                 case w of ww { Text.Megaparsec.State.State ww1 ww2 ww3 ->
+                 Megap.$w$sdecimal @ b ww1 ww2 ww3 w1 w4 }) -}
+6a91e79b93d585316fabcd8cdfc498e6
+  $sdecimal10 ::
+    Text.Megaparsec.Error.ErrorItem
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+  {- Strictness: m2,
+     Unfolding: (Text.Megaparsec.Error.Label
+                   @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                   Megap.$sdecimal11) -}
+668c29dd3d05209fdd5d8b9794990cdf
+  $sdecimal11 :: GHC.Base.NonEmpty GHC.Types.Char
+  {- Strictness: m,
+     Unfolding: (GHC.Base.:|
+                   @ GHC.Types.Char
+                   Megap.$sdecimal14
+                   Megap.$sdecimal12) -}
+7bd377fb5ad887659159a82a64a054c0
+  $sdecimal12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$sdecimal13) -}
+e2cba5ba32c32386d906b505b35e40a1
+  $sdecimal13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("nteger"#) -}
+24b0dcf8132e08f3d4744d2890f40a11
+  $sdecimal14 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'i'#) -}
+b7aade4169e0fdb40ab4ecff683fcf6f
+  $sdecimal2 ::
+    [Data.Set.Internal.Set
+       (Text.Megaparsec.Error.ErrorItem
+          (Text.Megaparsec.Stream.Token [GHC.Types.Char]))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Set.Internal.Set
+                        (Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                   Megap.$sdecimal3
+                   (GHC.Types.[]
+                      @ (Data.Set.Internal.Set
+                           (Text.Megaparsec.Error.ErrorItem
+                              (Text.Megaparsec.Stream.Token [GHC.Types.Char]))))) -}
+fd72062c38e9287eacaeb311659c48f5
+  $sdecimal3 ::
+    Data.Set.Internal.Set
+      (Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+  {- Strictness: m1,
+     Unfolding: (Data.Set.Internal.Bin
+                   @ (Text.Megaparsec.Error.ErrorItem
+                        (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   1#
+                   Megap.$sdecimal4
+                   (Data.Set.Internal.Tip
+                      @ (Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                   (Data.Set.Internal.Tip
+                      @ (Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])))) -}
+41684a0d70891dcc4f4b0e972f6a3e22
+  $sdecimal4 ::
+    Text.Megaparsec.Error.ErrorItem
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+  {- Strictness: m2,
+     Unfolding: (Text.Megaparsec.Error.Label
+                   @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                   Megap.$sdecimal5) -}
+fc470a3ad2879887d02e261805141062
+  $sdecimal5 :: GHC.Base.NonEmpty GHC.Types.Char
+  {- Strictness: m,
+     Unfolding: (GHC.Base.:|
+                   @ GHC.Types.Char
+                   Megap.$sdecimal8
+                   Megap.$sdecimal6) -}
+c5e477a76ebf57a349ec775792fc2e00
+  $sdecimal6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.$sdecimal7) -}
+2d6e2a93dd05bc9922f98b56628eff00
+  $sdecimal7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("igit"#) -}
+fc686c14d7ac597c77682a02272c52dd
+  $sdecimal8 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'd'#) -}
+3c05925ff8ea5968ec3a48b6f9758e8c
+  $sdecimal9 ::
+    Data.Set.Internal.Set
+      (Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+  {- Strictness: m1,
+     Unfolding: (Data.Set.Internal.Bin
+                   @ (Text.Megaparsec.Error.ErrorItem
+                        (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   1#
+                   Megap.$sdecimal10
+                   (Data.Set.Internal.Tip
+                      @ (Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                   (Data.Set.Internal.Tip
+                      @ (Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])))) -}
+0b37020b5a771f3345f5edf0e1daeb4d
+  $sinsertR_go3 ::
+    GHC.Classes.Ord a1 =>
+    a1 -> a1 -> Data.Set.Internal.Set a1 -> Data.Set.Internal.Set a1
+  {- Arity: 4,
+     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><L,U><S,1*U><S,1*U> -}
+156ff5289ab8be3d9bd9a0038dbf9774
+  $sinsert_go3 ::
+    GHC.Classes.Ord a1 =>
+    a1 -> a1 -> Data.Set.Internal.Set a1 -> Data.Set.Internal.Set a1
+  {- Arity: 4,
+     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><L,U><S,1*U><S,1*U> -}
+f51c76e56d8789c96d7c14bba2f54875
+  $ssigned1 ::
+    Text.Megaparsec.Internal.ParsecT
+      Data.Void.Void GHC.Base.String Data.Functor.Identity.Identity ()
+    -> Text.Megaparsec.Internal.ParsecT
+         Data.Void.Void
+         GHC.Base.String
+         Data.Functor.Identity.Identity
+         GHC.Types.Int
+    -> forall b.
+       Text.Megaparsec.State.State [GHC.Types.Char]
+       -> (GHC.Types.Int
+           -> Text.Megaparsec.State.State [GHC.Types.Char]
+           -> Text.Megaparsec.Internal.Hints
+                (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Megaparsec.Error.ParseError
+             [GHC.Types.Char] Data.Void.Void
+           -> Text.Megaparsec.State.State [GHC.Types.Char]
+           -> Data.Functor.Identity.Identity b)
+       -> (GHC.Types.Int
+           -> Text.Megaparsec.State.State [GHC.Types.Char]
+           -> Text.Megaparsec.Internal.Hints
+                (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Megaparsec.Error.ParseError
+             [GHC.Types.Char] Data.Void.Void
+           -> Text.Megaparsec.State.State [GHC.Types.Char]
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 7,
+     Strictness: <L,C(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(C1(U)))))><L,U(U,U,U)><L,C(U)><L,U><L,C(U)><L,C(U)>,
+     Unfolding: (\ (spc :: Text.Megaparsec.Internal.ParsecT
+                             Data.Void.Void GHC.Base.String Data.Functor.Identity.Identity ())
+                   (p9 :: Text.Megaparsec.Internal.ParsecT
+                            Data.Void.Void
+                            GHC.Base.String
+                            Data.Functor.Identity.Identity
+                            GHC.Types.Int)
+                   @ b
+                   (eta18 :: Text.Megaparsec.State.State [GHC.Types.Char])
+                   (eta19 :: GHC.Types.Int
+                             -> Text.Megaparsec.State.State [GHC.Types.Char]
+                             -> Text.Megaparsec.Internal.Hints
+                                  (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                             -> Data.Functor.Identity.Identity b)
+                   (eta20 :: Text.Megaparsec.Error.ParseError
+                               [GHC.Types.Char] Data.Void.Void
+                             -> Text.Megaparsec.State.State [GHC.Types.Char]
+                             -> Data.Functor.Identity.Identity b)
+                   (eta21 :: GHC.Types.Int
+                             -> Text.Megaparsec.State.State [GHC.Types.Char]
+                             -> Text.Megaparsec.Internal.Hints
+                                  (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                             -> Data.Functor.Identity.Identity b)
+                   (eta22 :: Text.Megaparsec.Error.ParseError
+                               [GHC.Types.Char] Data.Void.Void
+                             -> Text.Megaparsec.State.State [GHC.Types.Char]
+                             -> Data.Functor.Identity.Identity b) ->
+                 let {
+                   eok :: (GHC.Types.Int -> GHC.Types.Int)
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          -> Data.Functor.Identity.Identity b
+                     {- Arity: 3, Strictness: <L,C(U)><L,U><L,U> -}
+                   = \ (x :: GHC.Types.Int -> GHC.Types.Int)
+                       (s' :: Text.Megaparsec.State.State [GHC.Types.Char])[OneShot]
+                       (hs :: Text.Megaparsec.Internal.Hints
+                                (Text.Megaparsec.Stream.Token [GHC.Types.Char]))[OneShot] ->
+                     p9
+                       `cast`
+                     (Text.Megaparsec.Internal.N:ParsecT[0]
+                          <Data.Void.Void>_N
+                          <[GHC.Types.Char]>_N
+                          <Data.Functor.Identity.Identity>_R
+                          <GHC.Types.Int>_R)
+                       @ b
+                       s'
+                       (GHC.Base..
+                          @ GHC.Types.Int
+                          @ (Text.Megaparsec.State.State [GHC.Types.Char]
+                             -> Text.Megaparsec.Internal.Hints
+                                  (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                             -> Data.Functor.Identity.Identity b)
+                          @ GHC.Types.Int
+                          eta19
+                          x)
+                       eta20
+                       (Text.Megaparsec.Internal.accHints
+                          @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          @ GHC.Types.Int
+                          @ [GHC.Types.Char]
+                          @ Data.Functor.Identity.Identity
+                          @ b
+                          hs
+                          (GHC.Base..
+                             @ GHC.Types.Int
+                             @ (Text.Megaparsec.State.State [GHC.Types.Char]
+                                -> Text.Megaparsec.Internal.Hints
+                                     (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                -> Data.Functor.Identity.Identity b)
+                             @ GHC.Types.Int
+                             eta21
+                             x))
+                       (Megap.$s$fAlternativeParsecT_$swithHints
+                          @ Data.Void.Void
+                          @ Data.Functor.Identity.Identity
+                          @ b
+                          hs
+                          eta22)
+                 } in
+                 Text.Megaparsec.Internal.$fApplicativeParsecT1
+                   @ [GHC.Types.Char]
+                   @ Data.Void.Void
+                   @ Data.Functor.Identity.Identity
+                   Text.Megaparsec.Stream.$fStream[]
+                   @ (GHC.Types.Int -> GHC.Types.Int)
+                   @ ()
+                   Megap.$ssigned2
+                     `cast`
+                   (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                             <Data.Void.Void>_N
+                             <[GHC.Types.Char]>_N
+                             <Data.Functor.Identity.Identity>_R
+                             <GHC.Types.Int -> GHC.Types.Int>_R))
+                   spc
+                   @ b
+                   eta18
+                   (\ (x :: GHC.Types.Int -> GHC.Types.Int)
+                      (s' :: Text.Megaparsec.State.State [GHC.Types.Char])[OneShot]
+                      (hs :: Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char]))[OneShot] ->
+                    p9
+                      `cast`
+                    (Text.Megaparsec.Internal.N:ParsecT[0]
+                         <Data.Void.Void>_N
+                         <[GHC.Types.Char]>_N
+                         <Data.Functor.Identity.Identity>_R
+                         <GHC.Types.Int>_R)
+                      @ b
+                      s'
+                      (GHC.Base..
+                         @ GHC.Types.Int
+                         @ (Text.Megaparsec.State.State [GHC.Types.Char]
+                            -> Text.Megaparsec.Internal.Hints
+                                 (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                            -> Data.Functor.Identity.Identity b)
+                         @ GHC.Types.Int
+                         eta19
+                         x)
+                      eta20
+                      (Text.Megaparsec.Internal.accHints
+                         @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                         @ GHC.Types.Int
+                         @ [GHC.Types.Char]
+                         @ Data.Functor.Identity.Identity
+                         @ b
+                         hs
+                         (GHC.Base..
+                            @ GHC.Types.Int
+                            @ (Text.Megaparsec.State.State [GHC.Types.Char]
+                               -> Text.Megaparsec.Internal.Hints
+                                    (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                               -> Data.Functor.Identity.Identity b)
+                            @ GHC.Types.Int
+                            eta19
+                            x))
+                      (Megap.$s$fAlternativeParsecT_$swithHints
+                         @ Data.Void.Void
+                         @ Data.Functor.Identity.Identity
+                         @ b
+                         hs
+                         eta20))
+                   eta20
+                   eok
+                   (\ (err :: Text.Megaparsec.Error.ParseError
+                                [GHC.Types.Char] Data.Void.Void)
+                      (ms :: Text.Megaparsec.State.State [GHC.Types.Char]) ->
+                    eok
+                      (GHC.Base.id @ GHC.Types.Int)
+                      eta18
+                      (case err of wild {
+                         Text.Megaparsec.Error.TrivialError errOffset ds ps4
+                         -> case eta18 of wild1 { Text.Megaparsec.State.State ds1 dt2 ds2 ->
+                            case errOffset of wild2 { GHC.Types.I# y ->
+                            case GHC.Prim.==# dt2 y of lwild {
+                              DEFAULT
+                              -> (GHC.Types.[]
+                                    @ (Data.Set.Internal.Set
+                                         (Text.Megaparsec.Error.ErrorItem
+                                            (Text.Megaparsec.Stream.Token [GHC.Types.Char]))))
+                                   `cast`
+                                 (Sym (Text.Megaparsec.Internal.N:Hints[0]
+                                           <Text.Megaparsec.Stream.Token [GHC.Types.Char]>_N))
+                              1#
+                              -> case ps4 of wild3 {
+                                   Data.Set.Internal.Bin dt3 ds4 ds5 ds3
+                                   -> (GHC.Types.:
+                                         @ (Data.Set.Internal.Set
+                                              (Text.Megaparsec.Error.ErrorItem
+                                                 (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                                         wild3
+                                         (GHC.Types.[]
+                                            @ (Data.Set.Internal.Set
+                                                 (Text.Megaparsec.Error.ErrorItem
+                                                    (Text.Megaparsec.Stream.Token
+                                                       [GHC.Types.Char])))))
+                                        `cast`
+                                      (Sym (Text.Megaparsec.Internal.N:Hints[0]
+                                                <Text.Megaparsec.Stream.Token [GHC.Types.Char]>_N))
+                                   Data.Set.Internal.Tip
+                                   -> (GHC.Types.[]
+                                         @ (Data.Set.Internal.Set
+                                              (Text.Megaparsec.Error.ErrorItem
+                                                 (Text.Megaparsec.Stream.Token [GHC.Types.Char]))))
+                                        `cast`
+                                      (Sym (Text.Megaparsec.Internal.N:Hints[0]
+                                                <Text.Megaparsec.Stream.Token
+                                                   [GHC.Types.Char]>_N)) } } } }
+                         Text.Megaparsec.Error.FancyError ds ds1
+                         -> (GHC.Types.[]
+                               @ (Data.Set.Internal.Set
+                                    (Text.Megaparsec.Error.ErrorItem
+                                       (Text.Megaparsec.Stream.Token [GHC.Types.Char]))))
+                              `cast`
+                            (Sym (Text.Megaparsec.Internal.N:Hints[0]
+                                      <Text.Megaparsec.Stream.Token [GHC.Types.Char]>_N)) }))) -}
+f4d7e45031b0349dd2348a149cffc03a
+  $ssigned2 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> ((GHC.Types.Int -> GHC.Types.Int)
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> ((GHC.Types.Int -> GHC.Types.Int)
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S(SSL),1*U(U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(C1(U))>,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   (w :: Text.Megaparsec.State.State [GHC.Types.Char])
+                   (w1 :: (GHC.Types.Int -> GHC.Types.Int)
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Megaparsec.Error.ParseError
+                            [GHC.Types.Char] Data.Void.Void
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: (GHC.Types.Int -> GHC.Types.Int)
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Megaparsec.Error.ParseError
+                            [GHC.Types.Char] Data.Void.Void
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Data.Functor.Identity.Identity b) ->
+                 case w of ww { Text.Megaparsec.State.State ww1 ww2 ww3 ->
+                 Megap.$wlvl @ b ww1 ww2 ww3 w1 w4 }) -}
+7489998b007ab1d6e29033760782e621
+  $tc'Add :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13971688383173667184##
+                   15371809239011796121##
+                   Megap.$trModule
+                   Megap.$tc'Add2
+                   0#
+                   Megap.$tc'Add1) -}
+689dc0670abba36c60ee2fd2a0adb44c
+  $tc'Add1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+93d3897ddb1327547603436601741c11
+  $tc'Add2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Add3) -}
+7a406e594a391ee335b5d012d91af327
+  $tc'Add3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Add"#) -}
+3396437b0127232f57e5de6762123b49
+  $tc'Blo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15480185514458093839##
+                   14891426629579091461##
+                   Megap.$trModule
+                   Megap.$tc'Blo2
+                   0#
+                   Megap.$tc'Blo1) -}
+f18a3c2c1993c1296558fe22bec1f614
+  $tc'Blo1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bb3060ea56e47d6ebeac61eff90d0886
+  $tc'Blo2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Blo3) -}
+ed12007a898a317c67fba45c6029869b
+  $tc'Blo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Blo"#) -}
+281efb83b3290534d12f7ea9e57a5cd5
+  $tc'C :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12487812825456774478##
+                   17794935700430655653##
+                   Megap.$trModule
+                   Megap.$tc'C2
+                   0#
+                   Megap.$tc'C1) -}
+1af5edca6728e238b884a8a943bf5d0b
+  $tc'C1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+01cb574de0a1e646f6c4d7eadc2393c0
+  $tc'C2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'C3) -}
+65cbb1ddafa0f3964d07c56baf62202a
+  $tc'C3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'C"#) -}
+76d0d4abe108e0b429326d49824c741a
+  $tc'Dup :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16288749684374796104##
+                   7026682337726728550##
+                   Megap.$trModule
+                   Megap.$tc'Dup1
+                   0#
+                   Megap.$tc'Add1) -}
+24074535a0502cd449a497e6b0153ba4
+  $tc'Dup1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Dup2) -}
+24d90e2dcaaf906f4f3c4a5cb3f9763e
+  $tc'Dup2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Dup"#) -}
+753495742c434462a6a5a52cefa6e9bd
+  $tc'Halt :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15703409924525334510##
+                   4906413083527176916##
+                   Megap.$trModule
+                   Megap.$tc'Halt2
+                   0#
+                   Megap.$tc'Halt1) -}
+515403d67eeb60c2baaff6b0c7eacfba
+  $tc'Halt1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+cda4efd3f552134fefe483ddd5ab8700
+  $tc'Halt2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Halt3) -}
+01854451c00a02b949e9ba22de53b06f
+  $tc'Halt3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Halt"#) -}
+3c686b07a96480f13e224be20ed49d79
+  $tc'I :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2655257995258178617##
+                   951712875696404349##
+                   Megap.$trModule
+                   Megap.$tc'I2
+                   0#
+                   Megap.$tc'I1) -}
+42786d51a29e2777b64e46570d3bfa00
+  $tc'I1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+cc8284f31b1761fa0b78524df07031d5
+  $tc'I2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'I3) -}
+6e5896dab1681ba9b178adfdbb963ea7
+  $tc'I3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'I"#) -}
+1dbf4a54e95d131824b828f223096a27
+  $tc'IfZero :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5371898514662568949##
+                   16174586111637640033##
+                   Megap.$trModule
+                   Megap.$tc'IfZero2
+                   0#
+                   Megap.$tc'IfZero1) -}
+899530bd2b220a0e2feafcb24403a8e9
+  $tc'IfZero1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+2de2d71b22b372cf7c6a8a5ef92fc2a7
+  $tc'IfZero2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'IfZero3) -}
+f0188a71dfcbf236751352b739ef8c73
+  $tc'IfZero3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IfZero"#) -}
+da05abb23fca7e80c6aebbcf7cf95210
+  $tc'Loop :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6068548061617455621##
+                   12090945386525117957##
+                   Megap.$trModule
+                   Megap.$tc'Loop2
+                   0#
+                   Megap.$tc'Loop1) -}
+888f702caf4f655c3c9c3ec5253eb805
+  $tc'Loop1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+26f4da7450fc01ce5d1dcd86e84ffccc
+  $tc'Loop2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Loop3) -}
+faa11b643d1955ee0d15e4a2b6aa1d2b
+  $tc'Loop3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Loop"#) -}
+214d42e37756a2fd95cf649f8a749b69
+  $tc'Mul :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17952131874402316126##
+                   10424092743468406036##
+                   Megap.$trModule
+                   Megap.$tc'Mul1
+                   0#
+                   Megap.$tc'Add1) -}
+50330f6c28f40944b22b128d678501b3
+  $tc'Mul1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Mul2) -}
+1b8cbd7ea7b9cdfa916ee7a3ca5a7ec5
+  $tc'Mul2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Mul"#) -}
+2d78a96837778c4f44b339fa1e8e4a53
+  $tc'Neg :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2157030975094295719##
+                   4039888025911068098##
+                   Megap.$trModule
+                   Megap.$tc'Neg1
+                   0#
+                   Megap.$tc'Add1) -}
+6021369d3718a1a479aac02292c89c55
+  $tc'Neg1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Neg2) -}
+c7d30805a1b5f4be2a7775fb0e9475ed
+  $tc'Neg2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Neg"#) -}
+bcbb7bf2e0c4f15170252d3b33e42379
+  $tc'Over :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2519181984440218207##
+                   10624564158396181838##
+                   Megap.$trModule
+                   Megap.$tc'Over1
+                   0#
+                   Megap.$tc'Add1) -}
+00fb870db29da7efdb843e5a36a56e92
+  $tc'Over1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Over2) -}
+94dc91c714f645d66f9dc1e9478d41e8
+  $tc'Over2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Over"#) -}
+8a3545f3082b58829c9551573151d597
+  $tc'Pop :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7519561690346959730##
+                   13495423095769206817##
+                   Megap.$trModule
+                   Megap.$tc'Pop1
+                   0#
+                   Megap.$tc'Add1) -}
+c263aca9785914f10218e494790fbb1b
+  $tc'Pop1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Pop2) -}
+17ddb5854aa412cddceebb29805391f0
+  $tc'Pop2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Pop"#) -}
+066fa64f2ef65d573378e8c630e84233
+  $tc'Push :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1259308672661852342##
+                   4319116159774291848##
+                   Megap.$trModule
+                   Megap.$tc'Push2
+                   0#
+                   Megap.$tc'Push1) -}
+908831c3b6e81393ebd321f7fcc8c7e3
+  $tc'Push1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+580cc53d1ad39786d5975b100768eb0d
+  $tc'Push2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Push3) -}
+e73c118aac6de631f7518d28968bcf34
+  $tc'Push3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Push"#) -}
+73cf15ac0b007a61ba3ca789d34f7e38
+  $tc'Ret :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10584505601833600498##
+                   10944867855708913193##
+                   Megap.$trModule
+                   Megap.$tc'Ret1
+                   0#
+                   Megap.$tc'Halt1) -}
+5b85d68043666576f186c18b8c86b3ee
+  $tc'Ret1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Ret2) -}
+6ac7f490eb8e8c59082461bbe9d61dd8
+  $tc'Ret2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Ret"#) -}
+64e0ef528f9a0e671312394478219b11
+  $tc'Swap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14417482845593603159##
+                   17431995737832422472##
+                   Megap.$trModule
+                   Megap.$tc'Swap1
+                   0#
+                   Megap.$tc'Add1) -}
+9e13ba8d1a8506b08ce5e5cee0af8c41
+  $tc'Swap1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tc'Swap2) -}
+3652dd1b89fa8da640ccbd7a0b4e3b84
+  $tc'Swap2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Swap"#) -}
+08278f2295ae03144bc2dc0b83976c0b
+  $tcBlock :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1774136481633968033##
+                   10780408386667706635##
+                   Megap.$trModule
+                   Megap.$tcBlock1
+                   0#
+                   GHC.Types.krep$*) -}
+77eacab59c0b3dde231456150abb904e
+  $tcBlock1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tcBlock2) -}
+ec6c819b1f7c8fabbde8d075769ac8a1
+  $tcBlock2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Block"#) -}
+5165714b0671543fedc8a4e898ac63aa
+  $tcCtrl :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9914797791054028097##
+                   17000017957378410806##
+                   Megap.$trModule
+                   Megap.$tcCtrl1
+                   0#
+                   GHC.Types.krep$*) -}
+5477bda01ce23f8337a6f8fcbf958a64
+  $tcCtrl1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tcCtrl2) -}
+4544d01a42f939cd7870fd797e8dceda
+  $tcCtrl2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Ctrl"#) -}
+a2a6f0fc6c0e2b9bd04391928ef40c4e
+  $tcInstrs :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9004043780049489096##
+                   10571747088501154310##
+                   Megap.$trModule
+                   Megap.$tcInstrs1
+                   0#
+                   GHC.Types.krep$*) -}
+893b471d14ba9c797186b10008383c21
+  $tcInstrs1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tcInstrs2) -}
+43fdad99a0827937cedda664429c6424
+  $tcInstrs2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Instrs"#) -}
+db65c806e01a3b81b3303428e4f80bed
+  $tcSimple :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1124497714471183348##
+                   16163367202352525704##
+                   Megap.$trModule
+                   Megap.$tcSimple1
+                   0#
+                   GHC.Types.krep$*) -}
+0db03b1a36853a3312011dc175a200ce
+  $tcSimple1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$tcSimple2) -}
+e24f9f95af0238e002ae2123051131f5
+  $tcSimple2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Simple"#) -}
+1661d03b2ab1fe9724b9ff2a2da9d7e4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Megap.$trModule3 Megap.$trModule1) -}
+9f555793b6cb279ad7c792fc9a38a653
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$trModule2) -}
+c5431f17ffe08f49d49b650764abc6ea
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Megap"#) -}
+15067acfa65bb45b704f533c21ca5b16
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Megap.$trModule4) -}
+f9364fc77714e8a6bc6018dccd5bcbf1
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("assignment3-0.1.0.0-1DFvuy72ZJrE0fXsM2rMND"#) -}
+e688b3b22975d3ca58273cf81c016331
+  $w$cshowsPrec :: GHC.Prim.Int# -> Megap.Instrs -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (ww1 :: Megap.Instrs) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = Megap.$w$cshowsPrec1 11# ww1
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++ @ GHC.Types.Char Megap.$fShowBlock2 (g x)
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Megap.$fShowBlock2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }) -}
+e688b3b22975d3ca58273cf81c016331
+  $w$cshowsPrec1 :: GHC.Prim.Int# -> Megap.Instrs -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [2] -}
+f73318575cf332d12ee3731b9c659755
+  $w$sdecimal ::
+    [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> Text.Megaparsec.State.PosState [GHC.Types.Char]
+    -> (GHC.Types.Int
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S,U><L,U><L,U><L,1*C1(C1(C1(U)))><L,1*C1(C1(U))>,
+     Inline: [2],
+     Unfolding: (\ @ b
+                   (ww :: [GHC.Types.Char])
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: Text.Megaparsec.State.PosState [GHC.Types.Char])
+                   (w :: GHC.Types.Int
+                         -> Text.Megaparsec.State.State [GHC.Types.Char]
+                         -> Text.Megaparsec.Internal.Hints
+                              (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                         -> Data.Functor.Identity.Identity b)
+                   (w1 :: Text.Megaparsec.Error.ParseError
+                            [GHC.Types.Char] Data.Void.Void
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Data.Functor.Identity.Identity b) ->
+                 case GHC.List.$wspan
+                        @ GHC.Types.Char
+                        GHC.Unicode.isDigit
+                        ww of ww3 { (#,#) ww4 ww5 ->
+                 case ww4 of wild {
+                   []
+                   -> w1
+                        (Text.Megaparsec.Error.TrivialError
+                           @ [GHC.Types.Char]
+                           @ Data.Void.Void
+                           (GHC.Types.I# ww1)
+                           (GHC.Maybe.Just
+                              @ (Text.Megaparsec.Error.ErrorItem
+                                   (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                              (case ww of wild1 {
+                                 []
+                                 -> Text.Megaparsec.Error.EndOfInput
+                                      @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                 : t ts
+                                 -> Text.Megaparsec.Error.Tokens
+                                      @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                      (Text.Megaparsec.Internal.nes
+                                         @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                         t `cast`
+                                         (Sub (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))) }))
+                           Megap.$sdecimal9)
+                        (Text.Megaparsec.State.State @ [GHC.Types.Char] ww ww1 ww2)
+                   : ds1 ds2
+                   -> w (Megap.$wgo wild 0#)
+                        (case GHC.List.$wlenAcc
+                                @ GHC.Types.Char
+                                wild
+                                0# of ww6 { DEFAULT ->
+                         Text.Megaparsec.State.State
+                           @ [GHC.Types.Char]
+                           ww5
+                           (GHC.Prim.+# ww1 ww6)
+                           ww2 })
+                        Megap.$sdecimal2
+                          `cast`
+                        (Sym (Text.Megaparsec.Internal.N:Hints[0]
+                                  <Text.Megaparsec.Stream.Token [GHC.Types.Char]>_N)) } }) -}
+35d533ce68823afc4184f93290c7c339
+  $w$sspace ::
+    Text.Megaparsec.Internal.ParsecT
+      Data.Void.Void GHC.Base.String Data.Functor.Identity.Identity ()
+    -> Text.Megaparsec.Internal.ParsecT
+         Data.Void.Void GHC.Base.String Data.Functor.Identity.Identity ()
+    -> Text.Megaparsec.Internal.ParsecT
+         Data.Void.Void GHC.Base.String Data.Functor.Identity.Identity ()
+    -> forall b.
+       Text.Megaparsec.State.State GHC.Base.String
+       -> (()
+           -> Text.Megaparsec.State.State GHC.Base.String
+           -> Text.Megaparsec.Internal.Hints
+                (Text.Megaparsec.Stream.Token GHC.Base.String)
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Megaparsec.Error.ParseError GHC.Base.String Data.Void.Void
+           -> Text.Megaparsec.State.State GHC.Base.String
+           -> Data.Functor.Identity.Identity b)
+       -> (()
+           -> Text.Megaparsec.State.State GHC.Base.String
+           -> Text.Megaparsec.Internal.Hints
+                (Text.Megaparsec.Stream.Token GHC.Base.String)
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 7,
+     Strictness: <C(C(C(C(C(S))))),C(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(C1(U)))))><L,C(C1(C1(C1(C1(U)))))><L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))>,
+     Inline: [2] -}
+8554a19d1288c892e383281568421500
+  $wgo :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Types.Int
+  {- Arity: 2, Strictness: <S,1*U><S,U>m, Inline: [2] -}
+2e0542d9b1e84c57443504a146297c2c
+  $wlvl ::
+    [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> Text.Megaparsec.State.PosState [GHC.Types.Char]
+    -> ((GHC.Types.Int -> GHC.Types.Int)
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <S,U><L,U><L,U><L,1*C1(C1(C1(U)))><L,1*C1(C1(U))>,
+     Inline: [2] -}
+f255bb0a961536cbf47d8420b2105592
+  $wws ::
+    [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> Text.Megaparsec.State.PosState [GHC.Types.Char]
+    -> (()
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S,U><L,U><L,U><L,1*C1(C1(C1(U)))><L,1*C1(C1(U))>,
+     Inline: [2],
+     Unfolding: (\ @ b1
+                   (ww :: [GHC.Types.Char])
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: Text.Megaparsec.State.PosState [GHC.Types.Char])
+                   (w :: ()
+                         -> Text.Megaparsec.State.State [GHC.Types.Char]
+                         -> Text.Megaparsec.Internal.Hints
+                              (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                         -> Data.Functor.Identity.Identity b1)
+                   (w1 :: Text.Megaparsec.Error.ParseError
+                            [GHC.Types.Char] Data.Void.Void
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Data.Functor.Identity.Identity b1) ->
+                 case GHC.List.$wspan
+                        @ GHC.Types.Char
+                        GHC.Unicode.isSpace
+                        ww of ww3 { (#,#) ww4 ww5 ->
+                 case ww4 of wild {
+                   []
+                   -> w1
+                        (Text.Megaparsec.Error.TrivialError
+                           @ [GHC.Types.Char]
+                           @ Data.Void.Void
+                           (GHC.Types.I# ww1)
+                           (GHC.Maybe.Just
+                              @ (Text.Megaparsec.Error.ErrorItem
+                                   (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                              (case ww of wild1 {
+                                 []
+                                 -> Text.Megaparsec.Error.EndOfInput
+                                      @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                 : t ts
+                                 -> Text.Megaparsec.Error.Tokens
+                                      @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                      (Text.Megaparsec.Internal.nes
+                                         @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                         t `cast`
+                                         (Sub (Sym (Text.Megaparsec.Stream.D:R:Token[][0])))) }))
+                           Megap.int5)
+                        (Text.Megaparsec.State.State @ [GHC.Types.Char] ww ww1 ww2)
+                   : ds1 ds2
+                   -> w GHC.Tuple.()
+                        (case GHC.List.$wlenAcc
+                                @ GHC.Types.Char
+                                wild
+                                0# of ww6 { DEFAULT ->
+                         Text.Megaparsec.State.State
+                           @ [GHC.Types.Char]
+                           ww5
+                           (GHC.Prim.+# ww1 ww6)
+                           ww2 })
+                        Megap.int4
+                          `cast`
+                        (Sym (Text.Megaparsec.Internal.N:Hints[0]
+                                  <Text.Megaparsec.Stream.Token [GHC.Types.Char]>_N)) } }) -}
+e688b3b22975d3ca58273cf81c016331
+  data Block = Blo Megap.Instrs
+e688b3b22975d3ca58273cf81c016331
+  data Ctrl
+    = IfZero Megap.Block Megap.Block | Loop Megap.Block | Halt | Ret
+e688b3b22975d3ca58273cf81c016331
+  data Instrs = I Megap.Simple Megap.Instrs | C Megap.Ctrl
+91f68aedfbccef6a1a12d8dd511d72fe
+  type Parser =
+    Text.Megaparsec.Parsec Data.Void.Void GHC.Base.String :: * -> *
+c640be9800249eac232b8543e97163ee
+  data Simple
+    = Push GHC.Types.Int | Add | Mul | Dup | Swap | Neg | Pop | Over
+6f635f235d5603ca260db096ae58f2b9
+  fromBlock :: Megap.Block -> Stack.Instructions
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (b :: Megap.Block) ->
+                 case b of wild { Megap.Blo x -> Megap.fromInstrs x Stack.Halt }) -}
+b992f95b1126299436f6b6c4d768dbfb
+  fromBlock' ::
+    Megap.Block -> Stack.Instructions -> Stack.Instructions
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(1*U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Megap.Block) (ret :: Stack.Instructions) ->
+                 case ds of wild { Megap.Blo x -> Megap.fromInstrs x ret }) -}
+ca1509ddf3153717b40ab2f2ee931a9f
+  fromCtrl :: Megap.Ctrl -> Stack.Instructions -> Stack.Instructions
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ds :: Megap.Ctrl) (ds1 :: Stack.Instructions) ->
+                 case ds of wild {
+                   Megap.IfZero b1 b2
+                   -> Stack.IfZero (Megap.fromBlock' b1 ds1) (Megap.fromBlock' b2 ds1)
+                   Megap.Loop b
+                   -> Stack.Loop
+                        (\ (loop :: Stack.Instructions) -> Megap.fromBlock' b loop)
+                   Megap.Halt -> Stack.Halt
+                   Megap.Ret -> ds1 }) -}
+a5c0ea37fe396d425fbac9a338542216
+  fromInstrs ::
+    Megap.Instrs -> Stack.Instructions -> Stack.Instructions
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+0c1b2ae1d6f15e5c2b38c76b800cbd78
+  fromSimple ::
+    Megap.Simple -> Stack.Instructions -> Stack.Instructions
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ds :: Megap.Simple) (cont :: Stack.Instructions) ->
+                 case ds of wild {
+                   Megap.Push i -> Stack.Push i cont
+                   Megap.Add -> Stack.Add cont
+                   Megap.Mul -> Stack.Mul cont
+                   Megap.Dup -> Stack.Dup cont
+                   Megap.Swap -> Stack.Swap cont
+                   Megap.Neg -> Stack.Neg cont
+                   Megap.Pop -> Stack.Pop cont
+                   Megap.Over -> Stack.Over cont }) -}
+8b0cb2c0d6b5be690afe5b36455b0522
+  int :: Megap.Parser GHC.Types.Int
+  {- Arity: 5,
+     Unfolding: InlineRule (0, True, True)
+                Megap.int1
+                  `cast`
+                (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                          <Data.Void.Void>_N
+                          <[GHC.Types.Char]>_N
+                          <Data.Functor.Identity.Identity>_R
+                          <GHC.Types.Int>_R)) -}
+9ba643125eb04034ec3a0c39d2607cbf
+  int1 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (GHC.Types.Int
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> (GHC.Types.Int
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Unfolding: (Megap.$ssigned1
+                   Megap.int2
+                     `cast`
+                   (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                             <Data.Void.Void>_N
+                             <GHC.Base.String>_N
+                             <Data.Functor.Identity.Identity>_R
+                             <()>_R))
+                   Megap.$sdecimal1
+                     `cast`
+                   (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                             <Data.Void.Void>_N
+                             <[GHC.Types.Char]>_N
+                             <Data.Functor.Identity.Identity>_R
+                             <GHC.Types.Int>_R))) -}
+cb09eed93bce888ed24c15cfa266c254
+  int10 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'w'#) -}
+104ec627bf1ff3dfd4ab89d23c3e93a0
+  int2 ::
+    Text.Megaparsec.State.State GHC.Base.String
+    -> (()
+        -> Text.Megaparsec.State.State GHC.Base.String
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token GHC.Base.String)
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError GHC.Base.String Data.Void.Void
+        -> Text.Megaparsec.State.State GHC.Base.String
+        -> Data.Functor.Identity.Identity b)
+    -> (()
+        -> Text.Megaparsec.State.State GHC.Base.String
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token GHC.Base.String)
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError GHC.Base.String Data.Void.Void
+        -> Text.Megaparsec.State.State GHC.Base.String
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,A>,
+     Unfolding: (\ @ b
+                   (w :: Text.Megaparsec.State.State GHC.Base.String)
+                   (w1 :: ()
+                          -> Text.Megaparsec.State.State GHC.Base.String
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token GHC.Base.String)
+                          -> Data.Functor.Identity.Identity b)
+                   (w2 :: Text.Megaparsec.Error.ParseError
+                            GHC.Base.String Data.Void.Void
+                          -> Text.Megaparsec.State.State GHC.Base.String
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: ()
+                          -> Text.Megaparsec.State.State GHC.Base.String
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token GHC.Base.String)
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Megaparsec.Error.ParseError
+                            GHC.Base.String Data.Void.Void
+                          -> Text.Megaparsec.State.State GHC.Base.String
+                          -> Data.Functor.Identity.Identity b) ->
+                 Megap.$w$sspace
+                   Megap.int3
+                     `cast`
+                   (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                             <Data.Void.Void>_N
+                             <[GHC.Types.Char]>_N
+                             <Data.Functor.Identity.Identity>_R
+                             <()>_R))
+                   (Text.Megaparsec.Internal.pZero
+                      @ Data.Void.Void
+                      @ [GHC.Types.Char]
+                      @ Data.Functor.Identity.Identity
+                      @ ())
+                   (Text.Megaparsec.Internal.pZero
+                      @ Data.Void.Void
+                      @ [GHC.Types.Char]
+                      @ Data.Functor.Identity.Identity
+                      @ ())
+                   @ b
+                   w
+                   w1
+                   w2
+                   w3) -}
+b35c3563abd04bc0de645c4fc969c7b7
+  int3 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (()
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> (()
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <S(SSL),1*U(U,U,U)><L,1*C1(C1(C1(U)))><L,A><L,A><L,1*C1(C1(U))>,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b1
+                   (w :: Text.Megaparsec.State.State [GHC.Types.Char])
+                   (w1 :: ()
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          -> Data.Functor.Identity.Identity b1)
+                   (w2 :: Text.Megaparsec.Error.ParseError
+                            [GHC.Types.Char] Data.Void.Void
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Data.Functor.Identity.Identity b1)
+                   (w3 :: ()
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                          -> Data.Functor.Identity.Identity b1)
+                   (w4 :: Text.Megaparsec.Error.ParseError
+                            [GHC.Types.Char] Data.Void.Void
+                          -> Text.Megaparsec.State.State [GHC.Types.Char]
+                          -> Data.Functor.Identity.Identity b1) ->
+                 case w of ww { Text.Megaparsec.State.State ww1 ww2 ww3 ->
+                 Megap.$wws @ b1 ww1 ww2 ww3 w1 w4 }) -}
+1f54d264add684f55bb9ba9df8ff213a
+  int4 ::
+    [Data.Set.Internal.Set
+       (Text.Megaparsec.Error.ErrorItem
+          (Text.Megaparsec.Stream.Token [GHC.Types.Char]))]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Set.Internal.Set
+                        (Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                   Megap.int5
+                   (GHC.Types.[]
+                      @ (Data.Set.Internal.Set
+                           (Text.Megaparsec.Error.ErrorItem
+                              (Text.Megaparsec.Stream.Token [GHC.Types.Char]))))) -}
+c753d7205d25ef8506fd7e8f6a73b5b8
+  int5 ::
+    Data.Set.Internal.Set
+      (Text.Megaparsec.Error.ErrorItem
+         (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+  {- Strictness: m1,
+     Unfolding: (Data.Set.Internal.Bin
+                   @ (Text.Megaparsec.Error.ErrorItem
+                        (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                   1#
+                   Megap.int6
+                   (Data.Set.Internal.Tip
+                      @ (Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])))
+                   (Data.Set.Internal.Tip
+                      @ (Text.Megaparsec.Error.ErrorItem
+                           (Text.Megaparsec.Stream.Token [GHC.Types.Char])))) -}
+23493b5b725c4e44925ac25bf76b3267
+  int6 ::
+    Text.Megaparsec.Error.ErrorItem
+      (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+  {- Strictness: m2,
+     Unfolding: (Text.Megaparsec.Error.Label
+                   @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                   Megap.int7) -}
+e3a7ae89580a7fc073132a85d5641edf
+  int7 :: GHC.Base.NonEmpty GHC.Types.Char
+  {- Strictness: m,
+     Unfolding: (GHC.Base.:| @ GHC.Types.Char Megap.int10 Megap.int8) -}
+85e2ece300d5c393383feafd19d3a4c4
+  int8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.int9) -}
+0a4b118ac66ff435d9815947a25b35ad
+  int9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("hite space"#) -}
+06a26bd54c438968e2439e4a48626916
+  main ::
+    GHC.IO.FilePath -> GHC.Types.IO (GHC.Maybe.Maybe [GHC.Types.Int])
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Megap.main1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Maybe.Maybe [GHC.Types.Int]>_R)) -}
+17b24130fd57d7ff1be8ae0281c16fad
+  main1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe [GHC.Types.Int] #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (file :: GHC.IO.FilePath)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.FD.openFile1
+                        file
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 let {
+                   s2 :: Text.Megaparsec.Pos.SourcePos
+                   = Text.Megaparsec.Pos.SourcePos file 1# 1#
+                 } in
+                 case (Text.Megaparsec.Internal.$fApplicativeParsecT1
+                         @ [GHC.Types.Char]
+                         @ Data.Void.Void
+                         @ Data.Functor.Identity.Identity
+                         Text.Megaparsec.Stream.$fStream[]
+                         @ Megap.Block
+                         @ GHC.Base.String
+                         Megap.main10
+                           `cast`
+                         (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                                   <Data.Void.Void>_N
+                                   <[GHC.Types.Char]>_N
+                                   <Data.Functor.Identity.Identity>_R
+                                   <Megap.Block>_R))
+                         Megap.main6
+                           `cast`
+                         (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                                   <Data.Void.Void>_N
+                                   <[GHC.Types.Char]>_N
+                                   <Data.Functor.Identity.Identity>_R
+                                   (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0])))))
+                         @ (Text.Megaparsec.Internal.Reply
+                              Data.Void.Void GHC.Base.String Megap.Block)
+                         (Text.Megaparsec.State.State
+                            @ GHC.Base.String
+                            ipv3
+                            0#
+                            (Text.Megaparsec.State.PosState
+                               @ GHC.Base.String
+                               ipv3
+                               0#
+                               s2
+                               Text.Megaparsec.Pos.defaultTabWidth_a
+                                 `cast`
+                               (Sym (Text.Megaparsec.Pos.N:Pos[0]))
+                               (GHC.Types.[] @ GHC.Types.Char)))
+                         Megap.main5
+                           `cast`
+                         (<Megap.Block>_R
+                          ->_R <Text.Megaparsec.State.State GHC.Base.String>_R
+                          ->_R <Text.Megaparsec.Internal.Hints
+                                  (Text.Megaparsec.Stream.Token GHC.Base.String)>_R
+                          ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                        <Text.Megaparsec.Internal.Reply
+                                           Data.Void.Void GHC.Base.String Megap.Block>_R))
+                         Megap.main4
+                           `cast`
+                         (<Text.Megaparsec.Error.ParseError
+                             GHC.Base.String Data.Void.Void>_R
+                          ->_R <Text.Megaparsec.State.State GHC.Base.String>_R
+                          ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                        <Text.Megaparsec.Internal.Reply
+                                           Data.Void.Void GHC.Base.String Megap.Block>_R))
+                         Megap.main3
+                           `cast`
+                         (<Megap.Block>_R
+                          ->_R <Text.Megaparsec.State.State GHC.Base.String>_R
+                          ->_R <Text.Megaparsec.Internal.Hints
+                                  (Text.Megaparsec.Stream.Token GHC.Base.String)>_R
+                          ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                        <Text.Megaparsec.Internal.Reply
+                                           Data.Void.Void GHC.Base.String Megap.Block>_R))
+                         Megap.main2
+                           `cast`
+                         (<Text.Megaparsec.Error.ParseError
+                             GHC.Base.String Data.Void.Void>_R
+                          ->_R <Text.Megaparsec.State.State GHC.Base.String>_R
+                          ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                        <Text.Megaparsec.Internal.Reply
+                                           Data.Void.Void GHC.Base.String Megap.Block>_R)))
+                        `cast`
+                      (Data.Functor.Identity.N:Identity[0]
+                           <Text.Megaparsec.Internal.Reply
+                              Data.Void.Void
+                              GHC.Base.String
+                              Megap.Block>_R) of wild { Text.Megaparsec.Internal.Reply s' ds result ->
+                 case result of wild1 {
+                   Text.Megaparsec.Internal.OK x
+                   -> (# ipv2,
+                         case x of wild2 { Megap.Blo x1 ->
+                         Stack.run'
+                           (Megap.fromInstrs x1 Stack.Halt)
+                           (GHC.Types.[] @ GHC.Types.Int) } #)
+                   Text.Megaparsec.Internal.Error e1
+                   -> case (GHC.IO.Handle.Text.hPutStr'
+                              GHC.IO.Handle.FD.stdout
+                              (Text.Megaparsec.Error.$werrorBundlePretty
+                                 @ GHC.Base.String
+                                 @ Data.Void.Void
+                                 Text.Megaparsec.Stream.$fStream[]
+                                 Text.Megaparsec.Error.$fShowErrorComponentVoid
+                                 e1
+                                 (GHC.Types.[]
+                                    @ (Text.Megaparsec.Error.ParseError
+                                         GHC.Base.String Data.Void.Void))
+                                 ipv3
+                                 0#
+                                 s2
+                                 Text.Megaparsec.Pos.defaultTabWidth_a
+                                   `cast`
+                                 (Sym (Text.Megaparsec.Pos.N:Pos[0]))
+                                 (GHC.Types.[] @ GHC.Types.Char))
+                              GHC.Types.False)
+                             `cast`
+                           (GHC.Types.N:IO[0] <()>_R)
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      (# ipv4, GHC.Maybe.Nothing @ [GHC.Types.Int] #) } } } } }) -}
+eb2c435f6a90553a5d49f61db4e45c39
+  main10 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (Megap.Block
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> (Megap.Block
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <L,U><L,C(U)><L,U><L,C(U)><L,U>,
+     Unfolding: (\ @ b1
+                   (s1 :: Text.Megaparsec.State.State [GHC.Types.Char])
+                   (cok :: Megap.Block
+                           -> Text.Megaparsec.State.State [GHC.Types.Char]
+                           -> Text.Megaparsec.Internal.Hints
+                                (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                           -> Data.Functor.Identity.Identity b1)
+                   (cerr :: Text.Megaparsec.Error.ParseError
+                              [GHC.Types.Char] Data.Void.Void
+                            -> Text.Megaparsec.State.State [GHC.Types.Char]
+                            -> Data.Functor.Identity.Identity b1)
+                   (eok :: Megap.Block
+                           -> Text.Megaparsec.State.State [GHC.Types.Char]
+                           -> Text.Megaparsec.Internal.Hints
+                                (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                           -> Data.Functor.Identity.Identity b1)
+                   (eerr :: Text.Megaparsec.Error.ParseError
+                              [GHC.Types.Char] Data.Void.Void
+                            -> Text.Megaparsec.State.State [GHC.Types.Char]
+                            -> Data.Functor.Identity.Identity b1) ->
+                 let {
+                   eta18 :: Megap.Instrs
+                            -> Text.Megaparsec.State.State [GHC.Types.Char]
+                            -> Text.Megaparsec.Internal.Hints
+                                 (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                            -> Data.Functor.Identity.Identity b1
+                     {- Arity: 1, Strictness: <L,U>,
+                        Unfolding: InlineRule (1, True, False)
+                                   (\ (x :: Megap.Instrs) -> cok (Megap.Blo x)) -}
+                   = \ (x :: Megap.Instrs) -> cok (Megap.Blo x)
+                 } in
+                 let {
+                   eta19 :: Megap.Instrs
+                            -> Text.Megaparsec.State.State [GHC.Types.Char]
+                            -> Text.Megaparsec.Internal.Hints
+                                 (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                            -> Data.Functor.Identity.Identity b1
+                     {- Arity: 1, Strictness: <L,U>,
+                        Unfolding: InlineRule (1, True, False)
+                                   (\ (x :: Megap.Instrs) -> eok (Megap.Blo x)) -}
+                   = \ (x :: Megap.Instrs) -> eok (Megap.Blo x)
+                 } in
+                 Megap.main9
+                   Megap.main12
+                     `cast`
+                   (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0])))
+                   @ b1
+                   s1
+                   (\ (x :: GHC.Base.String)
+                      (s' :: Text.Megaparsec.State.State [GHC.Types.Char])[OneShot]
+                      (hs :: Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char]))[OneShot] ->
+                    Megap.main11
+                      @ b1
+                      s'
+                      eta18
+                      cerr
+                      (Text.Megaparsec.Internal.accHints
+                         @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                         @ Megap.Instrs
+                         @ [GHC.Types.Char]
+                         @ Data.Functor.Identity.Identity
+                         @ b1
+                         hs
+                         eta18)
+                      (Megap.$s$fAlternativeParsecT_$swithHints
+                         @ Data.Void.Void
+                         @ Data.Functor.Identity.Identity
+                         @ b1
+                         hs
+                         cerr))
+                     `cast`
+                   (Nth:2
+                        (Nth:3
+                             (<Text.Megaparsec.State.State [GHC.Types.Char]>_R
+                              ->_R (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0]))
+                                    ->_R <Text.Megaparsec.State.State [GHC.Types.Char]
+                                          -> Text.Megaparsec.Internal.Hints
+                                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                          -> Data.Functor.Identity.Identity b1>_R)
+                              ->_R <Text.Megaparsec.Error.ParseError
+                                      [GHC.Types.Char] Data.Void.Void
+                                    -> Text.Megaparsec.State.State [GHC.Types.Char]
+                                    -> Data.Functor.Identity.Identity b1>_R
+                              ->_R (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0]))
+                                    ->_R <Text.Megaparsec.State.State [GHC.Types.Char]
+                                          -> Text.Megaparsec.Internal.Hints
+                                               (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                                          -> Data.Functor.Identity.Identity b1>_R)
+                              ->_R <(Text.Megaparsec.Error.ParseError
+                                       [GHC.Types.Char] Data.Void.Void
+                                     -> Text.Megaparsec.State.State [GHC.Types.Char]
+                                     -> Data.Functor.Identity.Identity b1)
+                                    -> Data.Functor.Identity.Identity b1>_R)))
+                   cerr
+                   (\ (x :: GHC.Base.String)
+                      (s' :: Text.Megaparsec.State.State [GHC.Types.Char])[OneShot]
+                      (hs :: Text.Megaparsec.Internal.Hints
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char]))[OneShot] ->
+                    Megap.main11
+                      @ b1
+                      s'
+                      eta18
+                      cerr
+                      (Text.Megaparsec.Internal.accHints
+                         @ (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+                         @ Megap.Instrs
+                         @ [GHC.Types.Char]
+                         @ Data.Functor.Identity.Identity
+                         @ b1
+                         hs
+                         eta19)
+                      (Megap.$s$fAlternativeParsecT_$swithHints
+                         @ Data.Void.Void
+                         @ Data.Functor.Identity.Identity
+                         @ b1
+                         hs
+                         eerr))
+                     `cast`
+                   (Nth:2
+                        (Nth:3
+                             (Nth:3
+                                  (Nth:3
+                                       (<Text.Megaparsec.State.State [GHC.Types.Char]>_R
+                                        ->_R (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0]))
+                                              ->_R <Text.Megaparsec.State.State [GHC.Types.Char]
+                                                    -> Text.Megaparsec.Internal.Hints
+                                                         (Text.Megaparsec.Stream.Token
+                                                            [GHC.Types.Char])
+                                                    -> Data.Functor.Identity.Identity b1>_R)
+                                        ->_R <Text.Megaparsec.Error.ParseError
+                                                [GHC.Types.Char] Data.Void.Void
+                                              -> Text.Megaparsec.State.State [GHC.Types.Char]
+                                              -> Data.Functor.Identity.Identity b1>_R
+                                        ->_R (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0]))
+                                              ->_R <Text.Megaparsec.State.State [GHC.Types.Char]
+                                                    -> Text.Megaparsec.Internal.Hints
+                                                         (Text.Megaparsec.Stream.Token
+                                                            [GHC.Types.Char])
+                                                    -> Data.Functor.Identity.Identity b1>_R)
+                                        ->_R <(Text.Megaparsec.Error.ParseError
+                                                 [GHC.Types.Char] Data.Void.Void
+                                               -> Text.Megaparsec.State.State [GHC.Types.Char]
+                                               -> Data.Functor.Identity.Identity b1)
+                                              -> Data.Functor.Identity.Identity b1>_R)))))
+                   eerr) -}
+c6049720b6c94ca70f718994157bf880
+  main11 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (Megap.Instrs
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> (Megap.Instrs
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U><L,C(U)><L,U><L,C(C1(C1(U)))><L,C(C1(U))> -}
+d28f5929b27b9b3e31921cf02e85cf11
+  main12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.main13) -}
+d7087189f6264bb1ae99345738b7f2e0
+  main13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("{"#) -}
+08928e7eed973ed7248eb03ca40fd943
+  main2 ::
+    Text.Megaparsec.Error.ParseError GHC.Base.String Data.Void.Void
+    -> Text.Megaparsec.State.State GHC.Base.String
+    -> Text.Megaparsec.Internal.Reply
+         Data.Void.Void GHC.Base.String Megap.Block
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (err :: Text.Megaparsec.Error.ParseError
+                             GHC.Base.String Data.Void.Void)
+                   (s' :: Text.Megaparsec.State.State GHC.Base.String) ->
+                 Text.Megaparsec.Internal.Reply
+                   @ Data.Void.Void
+                   @ GHC.Base.String
+                   @ Megap.Block
+                   s'
+                   Text.Megaparsec.Internal.Virgin
+                   (Text.Megaparsec.Internal.Error
+                      @ GHC.Base.String
+                      @ Data.Void.Void
+                      @ Megap.Block
+                      err)) -}
+07df100c0c3e1727de4fb807d98a06b7
+  main3 ::
+    Megap.Block
+    -> Text.Megaparsec.State.State GHC.Base.String
+    -> Text.Megaparsec.Internal.Hints
+         (Text.Megaparsec.Stream.Token GHC.Base.String)
+    -> Text.Megaparsec.Internal.Reply
+         Data.Void.Void GHC.Base.String Megap.Block
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><L,A>m,
+     Unfolding: (\ (a1 :: Megap.Block)
+                   (s' :: Text.Megaparsec.State.State GHC.Base.String)[OneShot]
+                   (ds :: Text.Megaparsec.Internal.Hints
+                            (Text.Megaparsec.Stream.Token GHC.Base.String))[OneShot] ->
+                 Text.Megaparsec.Internal.Reply
+                   @ Data.Void.Void
+                   @ GHC.Base.String
+                   @ Megap.Block
+                   s'
+                   Text.Megaparsec.Internal.Virgin
+                   (Text.Megaparsec.Internal.OK
+                      @ GHC.Base.String
+                      @ Data.Void.Void
+                      @ Megap.Block
+                      a1)) -}
+bb75cc669fbe3f996bc9c04fd57d21b4
+  main4 ::
+    Text.Megaparsec.Error.ParseError GHC.Base.String Data.Void.Void
+    -> Text.Megaparsec.State.State GHC.Base.String
+    -> Text.Megaparsec.Internal.Reply
+         Data.Void.Void GHC.Base.String Megap.Block
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m,
+     Unfolding: (\ (err :: Text.Megaparsec.Error.ParseError
+                             GHC.Base.String Data.Void.Void)
+                   (s' :: Text.Megaparsec.State.State GHC.Base.String) ->
+                 Text.Megaparsec.Internal.Reply
+                   @ Data.Void.Void
+                   @ GHC.Base.String
+                   @ Megap.Block
+                   s'
+                   Text.Megaparsec.Internal.Consumed
+                   (Text.Megaparsec.Internal.Error
+                      @ GHC.Base.String
+                      @ Data.Void.Void
+                      @ Megap.Block
+                      err)) -}
+af4f0961ac354ba8e729216e0c00a274
+  main5 ::
+    Megap.Block
+    -> Text.Megaparsec.State.State GHC.Base.String
+    -> Text.Megaparsec.Internal.Hints
+         (Text.Megaparsec.Stream.Token GHC.Base.String)
+    -> Text.Megaparsec.Internal.Reply
+         Data.Void.Void GHC.Base.String Megap.Block
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><L,A>m,
+     Unfolding: (\ (a1 :: Megap.Block)
+                   (s' :: Text.Megaparsec.State.State GHC.Base.String)[OneShot]
+                   (ds :: Text.Megaparsec.Internal.Hints
+                            (Text.Megaparsec.Stream.Token GHC.Base.String))[OneShot] ->
+                 Text.Megaparsec.Internal.Reply
+                   @ Data.Void.Void
+                   @ GHC.Base.String
+                   @ Megap.Block
+                   s'
+                   Text.Megaparsec.Internal.Consumed
+                   (Text.Megaparsec.Internal.OK
+                      @ GHC.Base.String
+                      @ Data.Void.Void
+                      @ Megap.Block
+                      a1)) -}
+017ecf616aad07c0b87928fdefd85162
+  main6 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (Text.Megaparsec.Stream.Tokens [GHC.Types.Char]
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Stream.Tokens [GHC.Types.Char]
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Unfolding: (Megap.main9
+                   Megap.main7
+                     `cast`
+                   (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0])))) -}
+511f838ad581b2ca1c7c9229010ee01b
+  main7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Megap.main8) -}
+96b103465f3e5b96842d3a5b1d3df6c4
+  main8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+93a5a2fa9e38062a9eea52bd0b491c1d
+  main9 ::
+    Text.Megaparsec.Stream.Tokens [GHC.Types.Char]
+    -> forall b1.
+       Text.Megaparsec.State.State [GHC.Types.Char]
+       -> (Text.Megaparsec.Stream.Tokens [GHC.Types.Char]
+           -> Text.Megaparsec.State.State [GHC.Types.Char]
+           -> Text.Megaparsec.Internal.Hints
+                (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+           -> Data.Functor.Identity.Identity b1)
+       -> (Text.Megaparsec.Error.ParseError
+             [GHC.Types.Char] Data.Void.Void
+           -> Text.Megaparsec.State.State [GHC.Types.Char]
+           -> Data.Functor.Identity.Identity b1)
+       -> (Text.Megaparsec.Stream.Tokens [GHC.Types.Char]
+           -> Text.Megaparsec.State.State [GHC.Types.Char]
+           -> Text.Megaparsec.Internal.Hints
+                (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+           -> Data.Functor.Identity.Identity b1)
+       -> (Text.Megaparsec.Error.ParseError
+             [GHC.Types.Char] Data.Void.Void
+           -> Text.Megaparsec.State.State [GHC.Types.Char]
+           -> Data.Functor.Identity.Identity b1)
+       -> Data.Functor.Identity.Identity b1
+  {- Arity: 6,
+     Strictness: <S,U><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U> -}
+285a00a3678724cdcb91dc281179941c
+  parseBlock :: Megap.Parser Megap.Block
+  {- Arity: 5,
+     Unfolding: InlineRule (0, True, True)
+                Megap.parseBlock1
+                  `cast`
+                (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                          <Data.Void.Void>_N
+                          <[GHC.Types.Char]>_N
+                          <Data.Functor.Identity.Identity>_R
+                          <Megap.Block>_R)) -}
+efd82d859c4dc1a66357a9eefcde1a54
+  parseBlock1 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (Megap.Block
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> (Megap.Block
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Unfolding: (Text.Megaparsec.Internal.$fApplicativeParsecT1
+                   @ [GHC.Types.Char]
+                   @ Data.Void.Void
+                   @ Data.Functor.Identity.Identity
+                   Text.Megaparsec.Stream.$fStream[]
+                   @ Megap.Block
+                   @ GHC.Base.String
+                   Megap.main10
+                     `cast`
+                   (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                             <Data.Void.Void>_N
+                             <[GHC.Types.Char]>_N
+                             <Data.Functor.Identity.Identity>_R
+                             <Megap.Block>_R))
+                   Megap.main6
+                     `cast`
+                   (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                             <Data.Void.Void>_N
+                             <[GHC.Types.Char]>_N
+                             <Data.Functor.Identity.Identity>_R
+                             (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0])))))) -}
+ebf8af8eb53094547a6c3bfe8a1dd167
+  parseCtrl :: Megap.Parser Megap.Ctrl
+  {- Arity: 5,
+     Strictness: <L,U><L,C(U)><L,U><L,C(C(C1(U)))><L,C(C1(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Megap.parseCtrl1
+                  `cast`
+                (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                          <Data.Void.Void>_N
+                          <[GHC.Types.Char]>_N
+                          <Data.Functor.Identity.Identity>_R
+                          <Megap.Ctrl>_R)) -}
+4600965f84a510cf13529a93f480f4eb
+  parseCtrl1 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (Megap.Ctrl
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> (Megap.Ctrl
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U><L,C(U)><L,U><L,C(C(C1(U)))><L,C(C1(U))> -}
+8fc273fdf80bb427b5c7eab93906be19
+  parseInstrs :: Megap.Parser Megap.Instrs
+  {- Arity: 5,
+     Strictness: <L,U><L,C(U)><L,U><L,C(C1(C1(U)))><L,C(C1(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Megap.main11
+                  `cast`
+                (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                          <Data.Void.Void>_N
+                          <[GHC.Types.Char]>_N
+                          <Data.Functor.Identity.Identity>_R
+                          <Megap.Instrs>_R)) -}
+0f5bd7969963ac0551b20d170b421b5d
+  parseSimple :: Megap.Parser Megap.Simple
+  {- Arity: 5, Strictness: <L,U><L,C(U)><L,U><L,C(U)><L,C(C1(U))>,
+     Unfolding: InlineRule (0, True, True)
+                Megap.parseSimple1
+                  `cast`
+                (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                          <Data.Void.Void>_N
+                          <[GHC.Types.Char]>_N
+                          <Data.Functor.Identity.Identity>_R
+                          <Megap.Simple>_R)) -}
+e0f9b72681290dff6ac14016799e4dc6
+  parseSimple1 ::
+    Text.Megaparsec.State.State [GHC.Types.Char]
+    -> (Megap.Simple
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> (Megap.Simple
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Text.Megaparsec.Internal.Hints
+             (Text.Megaparsec.Stream.Token [GHC.Types.Char])
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Megaparsec.Error.ParseError
+          [GHC.Types.Char] Data.Void.Void
+        -> Text.Megaparsec.State.State [GHC.Types.Char]
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, Strictness: <L,U><L,C(U)><L,U><L,C(U)><L,C(C1(U))> -}
+f121ebd08f142bc37867a0fa62e75558
+  sym :: GHC.Base.String -> Megap.Parser GHC.Base.String
+  {- Arity: 6,
+     Strictness: <S,U><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Megap.main9
+                  `cast`
+                (Sub (Text.Megaparsec.Stream.D:R:Tokens[][0])
+                 ->_R Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                               <Data.Void.Void>_N
+                               <[GHC.Types.Char]>_N
+                               <Data.Functor.Identity.Identity>_R
+                               (Sub (Sym (Text.Megaparsec.Stream.D:R:Tokens[][0]))))) -}
+a1cba16d5ba43709a800a37e010b0925
+  ws :: Megap.Parser ()
+  {- Arity: 5,
+     Strictness: <L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Megap.int2
+                  `cast`
+                (Sym (Text.Megaparsec.Internal.N:ParsecT[0]
+                          <Data.Void.Void>_N
+                          <GHC.Base.String>_N
+                          <Data.Functor.Identity.Identity>_R
+                          <()>_R)) -}
+instance GHC.Show.Show [Megap.Block] = Megap.$fShowBlock
+instance GHC.Show.Show [Megap.Ctrl] = Megap.$fShowCtrl
+instance GHC.Show.Show [Megap.Instrs] = Megap.$fShowInstrs
+instance GHC.Show.Show [Megap.Simple] = Megap.$fShowSimple
+"SPEC/Megap $fEqErrorFancy @ Void" [orphan] forall (v :: GHC.Classes.Eq
+                                                           Data.Void.Void)
+  Text.Megaparsec.Error.$fEqErrorFancy @ Data.Void.Void v
+  = Megap.$s$fEqErrorFancy
+"SPEC/Megap $fEqErrorFancy_$c/= @ Void" [orphan] forall ($dEq :: GHC.Classes.Eq
+                                                                   Data.Void.Void)
+  Text.Megaparsec.Error.$fEqErrorFancy_$c/= @ Data.Void.Void $dEq
+  = Megap.$s$fEqErrorFancy_$s$fEqErrorFancy_$c/=
+"SPEC/Megap $fEqErrorItem @ (Token [Char])" [orphan] forall (v :: GHC.Classes.Eq
+                                                                    (Text.Megaparsec.Stream.Token
+                                                                       [GHC.Types.Char]))
+  Text.Megaparsec.Error.$fEqErrorItem @ (Text.Megaparsec.Stream.Token
+                                           [GHC.Types.Char])
+                                      v
+  = Megap.$s$fEqErrorItem
+"SPEC/Megap $fEqErrorItem_$c/= @ (Token [Char])" [orphan] forall ($dEq :: GHC.Classes.Eq
+                                                                            (Text.Megaparsec.Stream.Token
+                                                                               [GHC.Types.Char]))
+  Text.Megaparsec.Error.$fEqErrorItem_$c/= @ (Text.Megaparsec.Stream.Token
+                                                [GHC.Types.Char])
+                                           $dEq
+  = Megap.$s$fEqErrorItem_$s$fEqErrorItem_$c/=
+"SPEC/Megap $fOrdErrorFancy @ Void" [orphan] forall (v :: GHC.Classes.Ord
+                                                            Data.Void.Void)
+  Text.Megaparsec.Error.$fOrdErrorFancy @ Data.Void.Void v
+  = Megap.$s$fOrdErrorFancy
+"SPEC/Megap $fOrdErrorFancy_$c<= @ Void" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                     Data.Void.Void)
+  Text.Megaparsec.Error.$fOrdErrorFancy_$c<= @ Data.Void.Void $dOrd
+  = Megap.$s$fOrdErrorFancy_$c<=
+"SPEC/Megap $fOrdErrorFancy_$c>= @ Void" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                     Data.Void.Void)
+  Text.Megaparsec.Error.$fOrdErrorFancy_$c>= @ Data.Void.Void $dOrd
+  = Megap.$s$fOrdErrorFancy_$c>=
+"SPEC/Megap $fOrdErrorFancy_$cmax @ Void" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                      Data.Void.Void)
+  Text.Megaparsec.Error.$fOrdErrorFancy_$cmax @ Data.Void.Void $dOrd
+  = Megap.$s$fOrdErrorFancy_$cmax
+"SPEC/Megap $fOrdErrorFancy_$cmin @ Void" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                      Data.Void.Void)
+  Text.Megaparsec.Error.$fOrdErrorFancy_$cmin @ Data.Void.Void $dOrd
+  = Megap.$s$fOrdErrorFancy_$cmin
+"SPEC/Megap $fOrdErrorItem @ (Token [Char])" [orphan] forall (v :: GHC.Classes.Ord
+                                                                     (Text.Megaparsec.Stream.Token
+                                                                        [GHC.Types.Char]))
+  Text.Megaparsec.Error.$fOrdErrorItem @ (Text.Megaparsec.Stream.Token
+                                            [GHC.Types.Char])
+                                       v
+  = Megap.$s$fOrdErrorItem
+"SPEC/Megap $fOrdErrorItem_$c<= @ (Token [Char])" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                              (Text.Megaparsec.Stream.Token
+                                                                                 [GHC.Types.Char]))
+  Text.Megaparsec.Error.$fOrdErrorItem_$c<= @ (Text.Megaparsec.Stream.Token
+                                                 [GHC.Types.Char])
+                                            $dOrd
+  = Megap.$s$fOrdErrorItem_$c<=
+"SPEC/Megap $fOrdErrorItem_$c>= @ (Token [Char])" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                              (Text.Megaparsec.Stream.Token
+                                                                                 [GHC.Types.Char]))
+  Text.Megaparsec.Error.$fOrdErrorItem_$c>= @ (Text.Megaparsec.Stream.Token
+                                                 [GHC.Types.Char])
+                                            $dOrd
+  = Megap.$s$fOrdErrorItem_$c>=
+"SPEC/Megap $fOrdErrorItem_$cmax @ (Token [Char])" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                               (Text.Megaparsec.Stream.Token
+                                                                                  [GHC.Types.Char]))
+  Text.Megaparsec.Error.$fOrdErrorItem_$cmax @ (Text.Megaparsec.Stream.Token
+                                                  [GHC.Types.Char])
+                                             $dOrd
+  = Megap.$s$fOrdErrorItem_$cmax
+"SPEC/Megap $fOrdErrorItem_$cmin @ (Token [Char])" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                               (Text.Megaparsec.Stream.Token
+                                                                                  [GHC.Types.Char]))
+  Text.Megaparsec.Error.$fOrdErrorItem_$cmin @ (Text.Megaparsec.Stream.Token
+                                                  [GHC.Types.Char])
+                                             $dOrd
+  = Megap.$s$fOrdErrorItem_$cmin
+"SPEC/Megap union @ (ErrorFancy Void)" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                   (Text.Megaparsec.Error.ErrorFancy
+                                                                      Data.Void.Void))
+  Data.Set.Internal.union @ (Text.Megaparsec.Error.ErrorFancy
+                               Data.Void.Void)
+                          $dOrd
+  = Megap.$s$fAlternativeParsecT_$sunion
+"SPEC/Megap union @ (ErrorItem (Token [Char]))" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                            (Text.Megaparsec.Error.ErrorItem
+                                                                               (Text.Megaparsec.Stream.Token
+                                                                                  [GHC.Types.Char])))
+  Data.Set.Internal.union @ (Text.Megaparsec.Error.ErrorItem
+                               (Text.Megaparsec.Stream.Token [GHC.Types.Char]))
+                          $dOrd
+  = Megap.$s$fAlternativeParsecT_$sunion1
+"SPEC/Megap withHints @ [Char] _ _ _" [orphan] forall @ e
+                                                      @ m :: * -> *
+                                                      @ b
+                                                      ($dStream :: Text.Megaparsec.Stream.Stream
+                                                                     [GHC.Types.Char])
+  Text.Megaparsec.Internal.withHints @ [GHC.Types.Char]
+                                     @ e
+                                     @ m
+                                     @ b
+                                     $dStream
+  = Megap.$s$fAlternativeParsecT_$swithHints @ e @ m @ b
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

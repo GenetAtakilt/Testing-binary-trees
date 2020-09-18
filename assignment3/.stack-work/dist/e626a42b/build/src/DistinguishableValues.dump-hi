@@ -1,0 +1,322 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-13 20:18:52.023296 UTC
+
+interface assignment3-0.1.0.0-1DFvuy72ZJrE0fXsM2rMND:DistinguishableValues 8063
+  interface hash: 5c0bb3b5a769dff5f0a99663dd7ad3aa
+  ABI hash: 9c89464b971251ccc7abd36632e8dae6
+  export-list hash: a3b62a4a41cabb2daa65679ab7757343
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: eec76558d727d1a2452939d6925bae36
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  DistinguishableValues.f
+  DistinguishableValues.A{DistinguishableValues.EitherBool DistinguishableValues.Maybe DistinguishableValues.OneBool DistinguishableValues.PairBool}
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base b0f6eed6c4b57b0a2f7c7570f245848b
+import  -/  base-4.12.0.0:GHC.Err c251e53993cbac856ae26ac9d3d737b6
+import  -/  base-4.12.0.0:GHC.Show 5c4c5ac15ef4d7749e0e6f06242c812a
+import  -/  base-4.12.0.0:Prelude b1ccc486556b171042710ef6f2d1a539
+import  -/  ghc-prim-0.5.3:GHC.Classes 555218a5f891dab16ebc6e6e04763e77
+9a2b6da1c6a0990e610a624be9d0cb23
+  $fEqA :: GHC.Classes.Eq DistinguishableValues.A
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ DistinguishableValues.A
+                  DistinguishableValues.$fEqA_$c==
+                  DistinguishableValues.$fEqA_$c/= -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  $fEqA_$c/= ::
+    DistinguishableValues.A
+    -> DistinguishableValues.A -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: DistinguishableValues.A) (y :: DistinguishableValues.A) ->
+                 case DistinguishableValues.$fEqA_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  $fEqA_$c== ::
+    DistinguishableValues.A
+    -> DistinguishableValues.A -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: DistinguishableValues.A)
+                   (ds1 :: DistinguishableValues.A) ->
+                 case ds of wild {
+                   DistinguishableValues.OneBool a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        DistinguishableValues.OneBool b1
+                        -> GHC.Classes.$fEqBool_$c== a1 b1 }
+                   DistinguishableValues.EitherBool a1 a2
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        DistinguishableValues.EitherBool b1 b2
+                        -> case a1 of wild2 {
+                             GHC.Types.False
+                             -> case b1 of wild3 {
+                                  GHC.Types.False -> GHC.Classes.$fEqBool_$c== a2 b2
+                                  GHC.Types.True -> GHC.Types.False }
+                             GHC.Types.True
+                             -> case b1 of wild3 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True -> GHC.Classes.$fEqBool_$c== a2 b2 } } }
+                   DistinguishableValues.PairBool a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        DistinguishableValues.PairBool b1
+                        -> case a1 of ww3 { (,) ww4 ww5 ->
+                           case b1 of ww6 { (,) ww7 ww8 ->
+                           case ww4 of wild2 {
+                             GHC.Types.False
+                             -> case ww7 of wild3 {
+                                  GHC.Types.False -> GHC.Classes.$fEqBool_$c== ww5 ww8
+                                  GHC.Types.True -> GHC.Types.False }
+                             GHC.Types.True
+                             -> case ww7 of wild3 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True -> GHC.Classes.$fEqBool_$c== ww5 ww8 } } } } }
+                   DistinguishableValues.Maybe a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        DistinguishableValues.Maybe b1
+                        -> GHC.Classes.$fEqBool_$c== a1 b1 } }) -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  $fShowA :: GHC.Show.Show DistinguishableValues.A
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ DistinguishableValues.A
+                  DistinguishableValues.$fShowA_$cshowsPrec
+                  DistinguishableValues.$fShowA_$cshow
+                  DistinguishableValues.$fShowA_$cshowList -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  $fShowA1 :: DistinguishableValues.A -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (w :: DistinguishableValues.A)
+                   (w1 :: GHC.Base.String) ->
+                 DistinguishableValues.$w$cshowsPrec 0# w w1) -}
+23d5560fcc4bfdefec21a79a86329eb1
+  $fShowA2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  $fShowA_$cshow :: DistinguishableValues.A -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: DistinguishableValues.A) ->
+                 DistinguishableValues.$fShowA_$cshowsPrec
+                   DistinguishableValues.$fShowA2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  $fShowA_$cshowList :: [DistinguishableValues.A] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [DistinguishableValues.A]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ DistinguishableValues.A
+                   DistinguishableValues.$fShowA1
+                   ls
+                   s) -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  $fShowA_$cshowsPrec ::
+    GHC.Types.Int -> DistinguishableValues.A -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: DistinguishableValues.A)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 DistinguishableValues.$w$cshowsPrec ww1 w1 w2 }) -}
+c8cf94501fda60686757eb134173a2b5
+  $tc'EitherBool :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7680529471164750474##
+                   5507059273907910502##
+                   DistinguishableValues.$trModule
+                   DistinguishableValues.$tc'EitherBool2
+                   0#
+                   DistinguishableValues.$tc'EitherBool1) -}
+2a341ebcb4457b05395b5e41669b4b2d
+  $tc'EitherBool1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+aa9725643b37ec51ce77ae09e92c278e
+  $tc'EitherBool2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   DistinguishableValues.$tc'EitherBool3) -}
+0493dd11568bbc0ce16d83cce9ddac98
+  $tc'EitherBool3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EitherBool"#) -}
+6879595d5b8f440f46204c60fe8d08a9
+  $tc'Maybe :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17502056235681020113##
+                   6735290595903598596##
+                   DistinguishableValues.$trModule
+                   DistinguishableValues.$tc'Maybe2
+                   0#
+                   DistinguishableValues.$tc'Maybe1) -}
+eb7ad4794c9f27eec5875fa4b48ac282
+  $tc'Maybe1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+43b9fc32dd98fe1f706e94acfad7d398
+  $tc'Maybe2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS DistinguishableValues.$tc'Maybe3) -}
+8e1eed43a4d0be11b3e7aa7eeacca683
+  $tc'Maybe3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Maybe"#) -}
+fa381b2a8060f7a0d4697018721ae2e5
+  $tc'OneBool :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6593439818675303402##
+                   18218334101343734044##
+                   DistinguishableValues.$trModule
+                   DistinguishableValues.$tc'OneBool1
+                   0#
+                   DistinguishableValues.$tc'Maybe1) -}
+70f1e2472797de27fe469c3875d6fc62
+  $tc'OneBool1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   DistinguishableValues.$tc'OneBool2) -}
+bd30730b179dfcda50f417507d8d52ee
+  $tc'OneBool2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'OneBool"#) -}
+64c5a65f3e4f9be9b29183d1a014a17e
+  $tc'PairBool :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4525197759527088888##
+                   18003252838154542505##
+                   DistinguishableValues.$trModule
+                   DistinguishableValues.$tc'PairBool2
+                   0#
+                   DistinguishableValues.$tc'PairBool1) -}
+2c21b5f6892de0c4501ddaf5bb7f65a7
+  $tc'PairBool1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7f7a734bf37fec0d7db69ad1e7d0a7bf
+  $tc'PairBool2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   DistinguishableValues.$tc'PairBool3) -}
+d775de9b6bdb05cf3bc7245a29c6fd9a
+  $tc'PairBool3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PairBool"#) -}
+091f5d47fb621938b947278a4215eb60
+  $tcA :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14140359079844209098##
+                   18090293795560560807##
+                   DistinguishableValues.$trModule
+                   DistinguishableValues.$tcA1
+                   0#
+                   GHC.Types.krep$*) -}
+be508acb6916d15fec556290eca74786
+  $tcA1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS DistinguishableValues.$tcA2) -}
+62f0d4686c33ef140d34068e0be81762
+  $tcA2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("A"#) -}
+c55e4cafb0971bd5f0a6888c2d0dc66f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   DistinguishableValues.$trModule3
+                   DistinguishableValues.$trModule1) -}
+3e22227feaed406408b517218c8591c6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS DistinguishableValues.$trModule2) -}
+7b9e1a0289ddc8ad6a28308dd3883bce
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DistinguishableValues"#) -}
+fea09f1f9e686e036433d36c11fda43c
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS DistinguishableValues.$trModule4) -}
+9eeba90f9b5783e45057d2f66855f565
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("assignment3-0.1.0.0-1DFvuy72ZJrE0fXsM2rMND"#) -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> DistinguishableValues.A -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [2] -}
+a471e4aaa1094eb6e3199980388e8129
+  $wf :: DistinguishableValues.A -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: DistinguishableValues.A) ->
+                 case w of wild {
+                   DistinguishableValues.OneBool a1
+                   -> case a1 of wild1 { GHC.Types.False -> 0# GHC.Types.True -> 1# }
+                   DistinguishableValues.EitherBool a1 a2
+                   -> case a1 of wild1 {
+                        GHC.Types.False
+                        -> case DistinguishableValues.f2 ret_ty GHC.Prim.Int# of {}
+                        GHC.Types.True
+                        -> case a2 of wild2 {
+                             GHC.Types.False -> 1# GHC.Types.True -> 0# } }
+                   DistinguishableValues.PairBool ds
+                   -> case ds of wild1 { (,) a1 a2 ->
+                      case a1 of wild2 {
+                        GHC.Types.False
+                        -> case a2 of wild3 { GHC.Types.False -> 0# GHC.Types.True -> 1# }
+                        GHC.Types.True
+                        -> case a2 of wild3 {
+                             GHC.Types.False -> 1# GHC.Types.True -> 0# } } }
+                   DistinguishableValues.Maybe ipv
+                   -> case DistinguishableValues.f1 ret_ty GHC.Prim.Int# of {} }) -}
+9a2b6da1c6a0990e610a624be9d0cb23
+  data A
+    = OneBool GHC.Types.Bool
+    | EitherBool GHC.Types.Bool GHC.Types.Bool
+    | PairBool (GHC.Types.Bool, GHC.Types.Bool)
+    | Maybe GHC.Types.Bool
+422d2a1af08c27c7715d457cec4c7cf6
+  f :: DistinguishableValues.A -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: DistinguishableValues.A) ->
+                 case DistinguishableValues.$wf w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+009ac13711b783d0d6bf4d3d53f61ff4
+  f1 :: GHC.Types.Int
+  {- Strictness: x -}
+1e45b48ce7b5e3a2a3d7abb2cc1677aa
+  f2 :: GHC.Types.Int
+  {- Strictness: x -}
+instance [safe] GHC.Classes.Eq [DistinguishableValues.A]
+  = DistinguishableValues.$fEqA
+instance [safe] GHC.Show.Show [DistinguishableValues.A]
+  = DistinguishableValues.$fShowA
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

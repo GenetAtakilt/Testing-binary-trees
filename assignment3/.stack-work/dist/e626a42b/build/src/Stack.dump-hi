@@ -1,0 +1,302 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-13 20:18:52.5740306 UTC
+
+interface assignment3-0.1.0.0-1DFvuy72ZJrE0fXsM2rMND:Stack 8063
+  interface hash: c23dcc221c67708b83f23da3ef6313ea
+  ABI hash: b61b9f0167f3bba163628c1e247f65ea
+  export-list hash: 198761b55219a6243e6db6bd432e71a3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: eec76558d727d1a2452939d6925bae36
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Stack.run
+  Stack.run'
+  Stack.Instructions{Stack.Add Stack.Dup Stack.Halt Stack.IfZero Stack.Loop Stack.Mul Stack.Neg Stack.Over Stack.Pop Stack.Push Stack.Swap}
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base b0f6eed6c4b57b0a2f7c7570f245848b
+import  -/  base-4.12.0.0:GHC.Num 6054c1c23a1433b06aa5321ae01f13b2
+import  -/  base-4.12.0.0:Prelude b1ccc486556b171042710ef6f2d1a539
+import  -/  ghc-prim-0.5.3:GHC.Classes 555218a5f891dab16ebc6e6e04763e77
+fb01ffab2ea9b8d95ae4c063405842a2
+  $tc'Add :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8074528370024839643##
+                   14733641975427805699##
+                   Stack.$trModule
+                   Stack.$tc'Add2
+                   0#
+                   Stack.$tc'Add1) -}
+09c73ca88ff967b613d4d757dc65f7c4
+  $tc'Add1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0dc137c0c8e2a96edd711c497c38efec
+  $tc'Add2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Add3) -}
+7973320f807d0a72d93e81c492fee391
+  $tc'Add3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Add"#) -}
+0ce3ac00084b4aaf6e806a4645e0c139
+  $tc'Dup :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18290031949292594760##
+                   6704615715152956815##
+                   Stack.$trModule
+                   Stack.$tc'Dup1
+                   0#
+                   Stack.$tc'Add1) -}
+a3b34a4568c6707dd63f50b091cd17c6
+  $tc'Dup1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Dup2) -}
+f377c920968364ba9eef5b7c28646cf4
+  $tc'Dup2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Dup"#) -}
+928dff719540110a0b465cf40f82dca4
+  $tc'Halt :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13480750374315156774##
+                   6503039539322482137##
+                   Stack.$trModule
+                   Stack.$tc'Halt2
+                   0#
+                   Stack.$tc'Halt1) -}
+770446144994dad7767cb3d3eff021a1
+  $tc'Halt1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+c27015266bc487e111ea288228cb2069
+  $tc'Halt2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Halt3) -}
+863d9977e44288376f2d9a39e9f07202
+  $tc'Halt3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Halt"#) -}
+fb78e5df4a878747c1f7bc7adcbc3f10
+  $tc'IfZero :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16714331760723017984##
+                   18199417208785486642##
+                   Stack.$trModule
+                   Stack.$tc'IfZero2
+                   0#
+                   Stack.$tc'IfZero1) -}
+6b01994aaebb69c69c3188d1b3742287
+  $tc'IfZero1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0fed6050409b3b9c90b97a54641737bc
+  $tc'IfZero2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'IfZero3) -}
+e3df508f8be9ab6804e21f3e33a8bd55
+  $tc'IfZero3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IfZero"#) -}
+b5319c6460b59bf2d7388dafbef10293
+  $tc'Loop :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9776618467764328792##
+                   8854890849907017382##
+                   Stack.$trModule
+                   Stack.$tc'Loop2
+                   0#
+                   Stack.$tc'Loop1) -}
+81bb92537701c8c05df1b7ad177dbadc
+  $tc'Loop1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+84bf3f6da0c0ab63cd14f2fa484a49fa
+  $tc'Loop2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Loop3) -}
+0d29b1bc72e9f31f52f9c2171190d224
+  $tc'Loop3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Loop"#) -}
+89e4cce3451a904672bf741720a5c633
+  $tc'Mul :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12935948385041049127##
+                   7089174598572359272##
+                   Stack.$trModule
+                   Stack.$tc'Mul1
+                   0#
+                   Stack.$tc'Add1) -}
+bae2eab6d33e4f557fcfe3d002a0b7df
+  $tc'Mul1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Mul2) -}
+3237e035e6f8876d81b2bd480e52bb9e
+  $tc'Mul2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Mul"#) -}
+6f7ebfee3e1d10b9602fc7870db3c7e0
+  $tc'Neg :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8963930802420367041##
+                   12545486786725411989##
+                   Stack.$trModule
+                   Stack.$tc'Neg1
+                   0#
+                   Stack.$tc'Add1) -}
+8781f18050ebdf8d95af8c1769a9614d
+  $tc'Neg1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Neg2) -}
+3f30bb8a3859a9aad0a030bbc05ee5d9
+  $tc'Neg2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Neg"#) -}
+bcde080d16dbb496cd8eb83f524ea6d5
+  $tc'Over :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13845318287637149322##
+                   15921239222755612788##
+                   Stack.$trModule
+                   Stack.$tc'Over1
+                   0#
+                   Stack.$tc'Add1) -}
+cd5cce2aafe65b5ab347664f7746eebe
+  $tc'Over1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Over2) -}
+275d54ed6c727ced584d3db231bfbec1
+  $tc'Over2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Over"#) -}
+be55cb49d15fec731bd6b86dc402bad9
+  $tc'Pop :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13808573475078571531##
+                   4348976274342308629##
+                   Stack.$trModule
+                   Stack.$tc'Pop1
+                   0#
+                   Stack.$tc'Add1) -}
+5d9c48124e9c280700a433c69613d60c
+  $tc'Pop1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Pop2) -}
+c200dda900377e7bd4ea75bf22080f35
+  $tc'Pop2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Pop"#) -}
+a9bc03b54c6a61fc198d1dcc21558f59
+  $tc'Push :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14411493702944130135##
+                   4147987530904192827##
+                   Stack.$trModule
+                   Stack.$tc'Push2
+                   0#
+                   Stack.$tc'Push1) -}
+c304c8f550d11e34900d8604252810cf
+  $tc'Push1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7763e0baf7784a5936c332a482b6c927
+  $tc'Push2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Push3) -}
+005e1892a74418c94b1066b3dfb1ddd1
+  $tc'Push3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Push"#) -}
+9199e9d5cc3841b33a6dbe51f06a384a
+  $tc'Swap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6639169801508438695##
+                   17519554172984564702##
+                   Stack.$trModule
+                   Stack.$tc'Swap1
+                   0#
+                   Stack.$tc'Add1) -}
+ec0ba9eea3fa245270cfef92b230a83c
+  $tc'Swap1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tc'Swap2) -}
+d07f689f4631a187f22f92e3f37145ce
+  $tc'Swap2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Swap"#) -}
+5005138f89134c55b462f00d57fe8cc0
+  $tcInstructions :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15452903806670611693##
+                   14822063244221399384##
+                   Stack.$trModule
+                   Stack.$tcInstructions1
+                   0#
+                   GHC.Types.krep$*) -}
+b9364e27768cac040994a7f7200449e5
+  $tcInstructions1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$tcInstructions2) -}
+f6f99550075a1c4d06699eef591845d5
+  $tcInstructions2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Instructions"#) -}
+5b3127bba55d06b4e0dcf487ba970ba3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Stack.$trModule3 Stack.$trModule1) -}
+95c859b258898c59aa4c536acdd31684
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$trModule2) -}
+735e76d871a915c4c661726da76a9fd1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Stack"#) -}
+494cb083e6b7e93144a6e925b30bb504
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Stack.$trModule4) -}
+ce627a272c196e3be13303f2a22f1509
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("assignment3-0.1.0.0-1DFvuy72ZJrE0fXsM2rMND"#) -}
+b7cb616944190638962a309122b2b45f
+  data Instructions
+    = Push GHC.Types.Int Stack.Instructions
+    | Add Stack.Instructions
+    | Mul Stack.Instructions
+    | Dup Stack.Instructions
+    | Swap Stack.Instructions
+    | Neg Stack.Instructions
+    | Pop Stack.Instructions
+    | Over Stack.Instructions
+    | IfZero Stack.Instructions Stack.Instructions
+    | Loop (Stack.Instructions -> Stack.Instructions)
+    | Halt
+03d58f0d86c0df4e20e35fc2fd854ada
+  run :: Stack.Instructions -> GHC.Maybe.Maybe [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (i :: Stack.Instructions) ->
+                 Stack.run' i (GHC.Types.[] @ GHC.Types.Int)) -}
+cdc6c032138d34717be590657da07609
+  run' ::
+    Stack.Instructions
+    -> [GHC.Types.Int] -> GHC.Maybe.Maybe [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
